@@ -16,10 +16,10 @@
 <?php
 $url = parse_url(getenv("mysql://b8e6b3c540d809:7afb81de@us-cdbr-iron-east-05.cleardb.net/heroku_481ed05723dc72a?reconnect=true"));
 
-$server = $url["us-cdbr-iron-east-05.cleardb.net"];
-$username = $url["b8e6b3c540d809"];
-$password = $url["7afb81de"];
-$db = substr($url["heroku_481ed05723dc72a"], 1);
+$server = "us-cdbr-iron-east-05.cleardb.net";
+$username_db = "b8e6b3c540d809";
+$password_db = "7afb81de";
+$db_db = "heroku_481ed05723dc72a";
 
-$connection = mysqli_connect($server, $username, $password, $db);
+$connection = mysqli_connect($server, $username_db, $password_db, $db_db);
 ?>
