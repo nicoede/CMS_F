@@ -20,7 +20,6 @@ $server = $url["us-cdbr-iron-east-05.cleardb.net"];
 $username = $url["b8e6b3c540d809"];
 $password = $url["7afb81de"];
 $db = substr($url["heroku_481ed05723dc72a"], 1);
-$port = 3306; 
 
-$connection = mysqli_connect($server, $username, $password, $db, $port);
+$connection = new mysqli($server, $username, $password, $db) or die(mysqli_error($connection));
 ?>
