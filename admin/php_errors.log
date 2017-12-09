@@ -1,0 +1,28 @@
+[03-Dec-2017 02:37:15 UTC] PHP Fatal error:  Call to undefined function show_all_posts_admin() in /home/ubuntu/workspace/cms/admin/includes/view_all_posts.php on line 17
+[03-Dec-2017 02:37:15 UTC] PHP Stack trace:
+[03-Dec-2017 02:37:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/admin/includes/view_all_posts.php:0
+[03-Dec-2017 02:37:34 UTC] PHP Fatal error:  Call to undefined function show_all_comments_admin() in /home/ubuntu/workspace/cms/admin/includes/view_all_comments.php on line 18
+[03-Dec-2017 02:37:34 UTC] PHP Stack trace:
+[03-Dec-2017 02:37:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/admin/includes/view_all_comments.php:0
+[03-Dec-2017 02:37:39 UTC] PHP Fatal error:  Call to undefined function show_all_users_admin() in /home/ubuntu/workspace/cms/admin/includes/view_all_users.php on line 17
+[03-Dec-2017 02:37:39 UTC] PHP Stack trace:
+[03-Dec-2017 02:37:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/admin/includes/view_all_users.php:0
+[03-Dec-2017 02:38:04 UTC] PHP Fatal error:  Call to undefined function show_all_posts_admin() in /home/ubuntu/workspace/cms/admin/includes/view_all_posts.php on line 17
+[03-Dec-2017 02:38:04 UTC] PHP Stack trace:
+[03-Dec-2017 02:38:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/admin/includes/view_all_posts.php:0
+[03-Dec-2017 02:40:26 UTC] PHP Fatal error:  Call to undefined function show_all_posts_admin() in /home/ubuntu/workspace/cms/admin/includes/view_all_posts.php on line 17
+[03-Dec-2017 02:40:26 UTC] PHP Stack trace:
+[03-Dec-2017 02:40:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/admin/includes/view_all_posts.php:0
+[03-Dec-2017 02:40:49 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/cms/admin/includes/functions.php on line 39
+[03-Dec-2017 02:40:49 UTC] PHP Stack trace:
+[03-Dec-2017 02:40:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/admin/includes/view_all_posts.php:0
+[03-Dec-2017 02:40:49 UTC] PHP   2. show_all_posts_admin() /home/ubuntu/workspace/cms/admin/includes/view_all_posts.php:18
+[03-Dec-2017 02:40:49 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/cms/admin/includes/functions.php:39
+[03-Dec-2017 02:40:49 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/ubuntu/workspace/cms/admin/includes/functions.php on line 41
+[03-Dec-2017 02:40:49 UTC] PHP Stack trace:
+[03-Dec-2017 02:40:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/admin/includes/view_all_posts.php:0
+[03-Dec-2017 02:40:49 UTC] PHP   2. show_all_posts_admin() /home/ubuntu/workspace/cms/admin/includes/view_all_posts.php:18
+[03-Dec-2017 02:40:49 UTC] PHP   3. mysqli_fetch_assoc() /home/ubuntu/workspace/cms/admin/includes/functions.php:41
+[03-Dec-2017 02:41:37 UTC] PHP Fatal error:  Call to undefined function show_all_posts_admin() in /home/ubuntu/workspace/cms/admin/includes/view_all_posts.php on line 17
+[03-Dec-2017 02:41:37 UTC] PHP Stack trace:
+[03-Dec-2017 02:41:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/admin/includes/view_all_posts.php:0
