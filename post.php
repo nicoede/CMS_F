@@ -42,9 +42,7 @@
                         <hr>
                         <?php echo "<img class='img-responsive' src='https://s3-ap-southeast-1.amazonaws.com/nicoedeimages/cms/{$post_image}' alt='image'>";?>
                         <hr>
-                        <div style="width:400px;">
-                            <?php echo $post_content ?>
-                        </div>
+                        <?php echo $post_content ?>
                         <?php
                         if(isset($_SESSION['user_role'])){
                             $u_role = $_SESSION['user_role'];
