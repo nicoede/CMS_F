@@ -1,4 +1,6 @@
 <?php
+
+
 session_start(); 
 
   function confirm($result){
@@ -9,8 +11,41 @@ session_start();
   }
   
   function add_post_admin(){
+    include "../s3/init.php"; 
     global $connection;
-    if(isset($_POST['create_post'])){
+    if(isset($_POST['create_post']) && isset($_FILES['image'])){
+      	$file = $_FILES['image'];
+
+        $name = $file['name'];
+        $tmp_name = $file['tmp_name'];
+        
+        $ext = explode('.', $name);
+        $ext = strtolower(end($ext));
+        
+        $key = md5(uniqid());
+        
+        $temp_file_name = "{$key}.{$ext}";
+        
+        $temp_file_path = "cms/{$temp_file_name}";
+        
+        move_uploaded_file($tmp_name, $temp_file_path);
+        
+        try {
+          // Upload data.
+          $result = $s3->putObject(array(
+             'Bucket'=> $config['s3']['bucket'],
+              'Key'   => "cms/{$name}",
+              'Body'  => fopen($temp_file_path, 'rb'),
+              'ACL'   => 'public-read'
+         ));
+        
+          // Print the URL to the object.
+        } catch (S3Exception $e) {
+            echo $e->getMessage() . "\n";
+        }
+        
+        unlink($temp_file_path);
+      
       $post_title = $_POST['post_title'];
       $post_author = $_POST['post_author'];
       $post_category_id = $_POST['post_category_id'];
@@ -22,9 +57,6 @@ session_start();
       $post_tags = $_POST['post_tags'];
       $post_content = $_POST['post_content'];
       $post_date = date('d-m-y');
-      //$post_comment_count = 4;
-      
-      move_uploaded_file($post_image_tmp, "../images/$post_image" );
       
       $query = "INSERT INTO posts(post_category_id, post_title, post_author, post_date, post_image, post_content, post_tags, post_status) VALUES ({$post_category_id}, '{$post_title}', '{$post_author}', now(), '{$post_image}', '{$post_content}', '{$post_tags}', '{$post_status}') ";
       $add_posts_query = mysqli_query($connection, $query);
@@ -39,7 +71,14 @@ session_start();
   }
   
   function show_all_posts_admin(){
+    include "../s3/init.php";
     global $connection;
+    
+    $objs = $s3->getIterator('ListObjects', [
+        'Prefix' => 'cms/',
+        'Bucket' => $config['s3']['bucket']
+    ]);
+    
     $query = "SELECT * FROM posts ";
     $select_posts = mysqli_query($connection, $query);
     
@@ -74,7 +113,7 @@ session_start();
         }
         
         echo "<td>{$post_status}</td>";
-        echo "<td><img width='100' src='../images/{$post_image}' alt='image'></td>";
+        echo "<td><img width='100' src='https://s3-ap-southeast-1.amazonaws.com/nicoedeimages/cms/{$post_image}' alt='image'></td>";
         echo "<td>{$post_tags}</td>";
         echo "<td>{$post_comment_count}</td>";
         echo "<td>{$post_date}</td>";
@@ -286,8 +325,16 @@ session_start();
 
       move_uploaded_file($user_image_tmp, "../images/$user_image" );
       
+      $query = "SELECT randSalt FROM users";
+      $select_randsalt_query = mysqli_query($connection, $query);
+      confirm($select_randsalt_query);
+      
+      $row = mysqli_fetch_array($select_randsalt_query);
+      $salt = $row['randSalt'];
+      $hashed_password = crypt($user_password, $salt);
+      
       $query = "INSERT INTO users(username, user_firstname, user_lastname, user_email, user_password, user_role, user_image, user_date) ";
-      $query .= "VALUES ('{$username}', '{$user_firstname}', '{$user_lastname}', '{$user_email}', '{$user_password}', '{$user_role}', '{$user_iamge}', now()) ";
+      $query .= "VALUES ('{$username}', '{$user_firstname}', '{$user_lastname}', '{$user_email}', '{$hashed_password}', '{$user_role}', '{$user_iamge}', now()) ";
       $add_user_query = mysqli_query($connection, $query);
       
       if(!confirm($add_user_query)){
@@ -313,5 +360,4 @@ session_start();
       header("Refresh: 0.5; url=users.php");
     }
   }
-  
 ?>

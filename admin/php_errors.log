@@ -26,3 +26,65 @@
 [03-Dec-2017 02:41:37 UTC] PHP Fatal error:  Call to undefined function show_all_posts_admin() in /home/ubuntu/workspace/cms/admin/includes/view_all_posts.php on line 17
 [03-Dec-2017 02:41:37 UTC] PHP Stack trace:
 [03-Dec-2017 02:41:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/admin/includes/view_all_posts.php:0
+[19-Dec-2017 22:57:27 UTC] PHP Warning:  include(../includes/db.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/admin_header.php on line 3
+[19-Dec-2017 22:57:27 UTC] PHP Stack trace:
+[19-Dec-2017 22:57:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/admin_header.php:0
+[19-Dec-2017 22:57:27 UTC] PHP Warning:  include(): Failed opening '../includes/db.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/admin_header.php on line 3
+[19-Dec-2017 22:57:27 UTC] PHP Stack trace:
+[19-Dec-2017 22:57:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/admin_header.php:0
+[19-Dec-2017 22:57:27 UTC] PHP Warning:  include(includes/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/admin_header.php on line 4
+[19-Dec-2017 22:57:27 UTC] PHP Stack trace:
+[19-Dec-2017 22:57:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/admin_header.php:0
+[19-Dec-2017 22:57:27 UTC] PHP Warning:  include(): Failed opening 'includes/functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/admin_header.php on line 4
+[19-Dec-2017 22:57:27 UTC] PHP Stack trace:
+[19-Dec-2017 22:57:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/admin_header.php:0
+[19-Dec-2017 22:57:27 UTC] PHP Warning:  require(../s3/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/admin_header.php on line 50
+[19-Dec-2017 22:57:27 UTC] PHP Stack trace:
+[19-Dec-2017 22:57:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/admin_header.php:0
+[19-Dec-2017 22:57:27 UTC] PHP Fatal error:  require(): Failed opening required '../s3/init.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/admin_header.php on line 50
+[19-Dec-2017 22:57:27 UTC] PHP Stack trace:
+[19-Dec-2017 22:57:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/admin_header.php:0
+[19-Dec-2017 22:59:18 UTC] PHP Warning:  include(../includes/db.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/admin_header.php on line 3
+[19-Dec-2017 22:59:18 UTC] PHP Stack trace:
+[19-Dec-2017 22:59:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/admin_header.php:0
+[19-Dec-2017 22:59:18 UTC] PHP Warning:  include(): Failed opening '../includes/db.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/admin_header.php on line 3
+[19-Dec-2017 22:59:18 UTC] PHP Stack trace:
+[19-Dec-2017 22:59:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/admin_header.php:0
+[19-Dec-2017 22:59:18 UTC] PHP Warning:  include(includes/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/admin_header.php on line 4
+[19-Dec-2017 22:59:18 UTC] PHP Stack trace:
+[19-Dec-2017 22:59:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/admin_header.php:0
+[19-Dec-2017 22:59:18 UTC] PHP Warning:  include(): Failed opening 'includes/functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/admin_header.php on line 4
+[19-Dec-2017 22:59:18 UTC] PHP Stack trace:
+[19-Dec-2017 22:59:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/admin_header.php:0
+[19-Dec-2017 22:59:18 UTC] PHP Warning:  include(../s3/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/admin_header.php on line 5
+[19-Dec-2017 22:59:18 UTC] PHP Stack trace:
+[19-Dec-2017 22:59:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/admin_header.php:0
+[19-Dec-2017 22:59:18 UTC] PHP Warning:  include(): Failed opening '../s3/init.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/admin_header.php on line 5
+[19-Dec-2017 22:59:18 UTC] PHP Stack trace:
+[19-Dec-2017 22:59:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/admin_header.php:0
+[19-Dec-2017 23:00:12 UTC] PHP Warning:  include(../s3/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 23:00:12 UTC] PHP Stack trace:
+[19-Dec-2017 23:00:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/functions.php:0
+[19-Dec-2017 23:00:12 UTC] PHP Warning:  include(): Failed opening '../s3/init.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 23:00:12 UTC] PHP Stack trace:
+[19-Dec-2017 23:00:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/functions.php:0
+[19-Dec-2017 23:00:52 UTC] PHP Warning:  include(./s3/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 23:00:52 UTC] PHP Stack trace:
+[19-Dec-2017 23:00:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/functions.php:0
+[19-Dec-2017 23:00:52 UTC] PHP Warning:  include(): Failed opening './s3/init.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 23:00:52 UTC] PHP Stack trace:
+[19-Dec-2017 23:00:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/functions.php:0
+[19-Dec-2017 23:00:58 UTC] PHP Warning:  require(../vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/s3/init.php on line 3
+[19-Dec-2017 23:00:58 UTC] PHP Stack trace:
+[19-Dec-2017 23:00:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/functions.php:0
+[19-Dec-2017 23:00:58 UTC] PHP   2. include() /home/ubuntu/workspace/admin/includes/functions.php:2
+[19-Dec-2017 23:00:58 UTC] PHP Fatal error:  require(): Failed opening required '../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/s3/init.php on line 3
+[19-Dec-2017 23:00:58 UTC] PHP Stack trace:
+[19-Dec-2017 23:00:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/functions.php:0
+[19-Dec-2017 23:00:58 UTC] PHP   2. include() /home/ubuntu/workspace/admin/includes/functions.php:2
+[19-Dec-2017 23:01:14 UTC] PHP Warning:  include(../s3/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 23:01:14 UTC] PHP Stack trace:
+[19-Dec-2017 23:01:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/functions.php:0
+[19-Dec-2017 23:01:14 UTC] PHP Warning:  include(): Failed opening '../s3/init.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 23:01:14 UTC] PHP Stack trace:
+[19-Dec-2017 23:01:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/includes/functions.php:0

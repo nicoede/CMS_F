@@ -40,10 +40,11 @@
                         </p>
                         <p><span class="glyphicon glyphicon-time"></span><?php echo $post_date ?></p>
                         <hr>
-                        <img class="img-responsive" src="images/<?php echo $post_image;?>" alt="">
+                        <?php echo "<img class='img-responsive' src='https://s3-ap-southeast-1.amazonaws.com/nicoedeimages/cms/{$post_image}' alt='image'>";?>
                         <hr>
-                        <p><?php echo $post_content ?></p>
-                        
+                        <div style="width:400px;">
+                            <?php echo $post_content ?>
+                        </div>
                         <?php
                         if(isset($_SESSION['user_role'])){
                             $u_role = $_SESSION['user_role'];

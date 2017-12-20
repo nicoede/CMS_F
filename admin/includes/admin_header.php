@@ -1,7 +1,8 @@
 <?php 
 ob_start(); 
 include "../includes/db.php"; 
-include "includes/functions.php"; 
+include "includes/functions.php";
+include "../s3/init.php";
 session_start(); 
 
 if(!isset($_SESSION['user_role'])){
@@ -47,3 +48,5 @@ if(!isset($_SESSION['user_role'])){
 </head>
 
 <body>
+    
+    

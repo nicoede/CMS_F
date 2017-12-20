@@ -37,9 +37,9 @@
                         </p>
                         <p><span class="glyphicon glyphicon-time"></span><?php echo $post_date ?></p>
                         <hr>
-                        <a href="post.php?p_id=<?php echo $post_id; ?>"><img class="img-responsive" src="images/<?php echo $post_image;?>" alt=""></a>
+                        <a href="post.php?p_id=<?php echo $post_id; ?>"><img class="img-responsive" <?php echo "<img class='img-responsive' src='https://s3-ap-southeast-1.amazonaws.com/nicoedeimages/cms/{$post_image}'alt='image'>";?> </a>
                         <hr>
-                        <p><?php echo $post_content ?></p>
+                        <p><?php echo substr($post_content, 0, 100) . " ..."; ?></p>
                         <a class="btn btn-primary" href="post.php?p_id=<?php echo $post_id; ?>">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
                         
                         <hr>

@@ -248,3 +248,279 @@
 [03-Dec-2017 02:21:18 UTC] PHP Fatal error:  Call to undefined function myslqi_query() in /home/ubuntu/workspace/cms/admin/index.php on line 36
 [03-Dec-2017 02:21:18 UTC] PHP Stack trace:
 [03-Dec-2017 02:21:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cms/admin/index.php:0
+[19-Dec-2017 22:39:22 UTC] PHP Fatal error:  Call to a member function putObject() on a non-object in /home/ubuntu/workspace/admin/includes/functions.php on line 32
+[19-Dec-2017 22:39:22 UTC] PHP Stack trace:
+[19-Dec-2017 22:39:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:39:22 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[19-Dec-2017 22:39:22 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[19-Dec-2017 22:40:04 UTC] PHP Warning:  require(../app/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 22:40:04 UTC] PHP Stack trace:
+[19-Dec-2017 22:40:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:40:04 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:1
+[19-Dec-2017 22:40:04 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:40:04 UTC] PHP Fatal error:  require(): Failed opening required '../app/init.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 22:40:04 UTC] PHP Stack trace:
+[19-Dec-2017 22:40:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:40:04 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:1
+[19-Dec-2017 22:40:04 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:40:28 UTC] PHP Warning:  require(../s3/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 22:40:28 UTC] PHP Stack trace:
+[19-Dec-2017 22:40:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:40:28 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:1
+[19-Dec-2017 22:40:28 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:40:28 UTC] PHP Fatal error:  require(): Failed opening required '../s3/init.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 22:40:28 UTC] PHP Stack trace:
+[19-Dec-2017 22:40:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:40:28 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:1
+[19-Dec-2017 22:40:28 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:41:12 UTC] PHP Fatal error:  Class 'Aws\S3\S3Client' not found in /home/ubuntu/workspace/admin/s3/init.php on line 6
+[19-Dec-2017 22:41:12 UTC] PHP Stack trace:
+[19-Dec-2017 22:41:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:41:12 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:1
+[19-Dec-2017 22:41:12 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:41:12 UTC] PHP   4. require() /home/ubuntu/workspace/admin/includes/functions.php:2
+[19-Dec-2017 22:42:28 UTC] PHP Catchable fatal error:  Argument 1 passed to Aws\Common\Client\AbstractClient::__construct() must be an instance of Aws\Common\Credentials\CredentialsInterface, array given, called in /home/ubuntu/workspace/admin/s3/init.php on line 13 and defined in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Aws/Common/Client/AbstractClient.php on line 73
+[19-Dec-2017 22:42:28 UTC] PHP Stack trace:
+[19-Dec-2017 22:42:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:42:28 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:1
+[19-Dec-2017 22:42:28 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:42:28 UTC] PHP   4. require() /home/ubuntu/workspace/admin/includes/functions.php:2
+[19-Dec-2017 22:42:28 UTC] PHP   5. Aws\Common\Client\AbstractClient->__construct() /home/ubuntu/workspace/admin/s3/init.php:13
+[19-Dec-2017 22:44:00 UTC] PHP Fatal error:  Call to a member function putObject() on a non-object in /home/ubuntu/workspace/admin/includes/functions.php on line 34
+[19-Dec-2017 22:44:00 UTC] PHP Stack trace:
+[19-Dec-2017 22:44:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:44:00 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[19-Dec-2017 22:44:00 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[19-Dec-2017 22:44:27 UTC] PHP Warning:  require(../s3/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 22:44:27 UTC] PHP Stack trace:
+[19-Dec-2017 22:44:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:44:27 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:1
+[19-Dec-2017 22:44:27 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:44:27 UTC] PHP Fatal error:  require(): Failed opening required '../s3/init.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 22:44:27 UTC] PHP Stack trace:
+[19-Dec-2017 22:44:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:44:27 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:1
+[19-Dec-2017 22:44:27 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:45:32 UTC] PHP Fatal error:  Call to a member function putObject() on a non-object in /home/ubuntu/workspace/admin/includes/functions.php on line 34
+[19-Dec-2017 22:45:32 UTC] PHP Stack trace:
+[19-Dec-2017 22:45:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:45:32 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[19-Dec-2017 22:45:32 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[19-Dec-2017 22:46:47 UTC] PHP Warning:  require(../s3/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/admin_header.php on line 50
+[19-Dec-2017 22:46:47 UTC] PHP Stack trace:
+[19-Dec-2017 22:46:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:46:47 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:1
+[19-Dec-2017 22:46:47 UTC] PHP Fatal error:  require(): Failed opening required '../s3/init.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/admin_header.php on line 50
+[19-Dec-2017 22:46:47 UTC] PHP Stack trace:
+[19-Dec-2017 22:46:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:46:47 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:1
+[19-Dec-2017 22:47:18 UTC] PHP Fatal error:  Call to a member function putObject() on a non-object in /home/ubuntu/workspace/admin/includes/functions.php on line 34
+[19-Dec-2017 22:47:18 UTC] PHP Stack trace:
+[19-Dec-2017 22:47:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:47:18 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[19-Dec-2017 22:47:18 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[19-Dec-2017 22:50:05 UTC] PHP Warning:  require(../../../vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/s3/init.php on line 3
+[19-Dec-2017 22:50:05 UTC] PHP Stack trace:
+[19-Dec-2017 22:50:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[19-Dec-2017 22:50:05 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:1
+[19-Dec-2017 22:50:05 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:50:05 UTC] PHP   4. require() /home/ubuntu/workspace/admin/includes/functions.php:2
+[19-Dec-2017 22:50:05 UTC] PHP Fatal error:  require(): Failed opening required '../../../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/s3/init.php on line 3
+[19-Dec-2017 22:50:05 UTC] PHP Stack trace:
+[19-Dec-2017 22:50:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[19-Dec-2017 22:50:05 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:1
+[19-Dec-2017 22:50:05 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:50:05 UTC] PHP   4. require() /home/ubuntu/workspace/admin/includes/functions.php:2
+[19-Dec-2017 22:50:24 UTC] PHP Warning:  require(../../../vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/s3/init.php on line 3
+[19-Dec-2017 22:50:24 UTC] PHP Stack trace:
+[19-Dec-2017 22:50:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[19-Dec-2017 22:50:24 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:1
+[19-Dec-2017 22:50:24 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:50:24 UTC] PHP   4. require() /home/ubuntu/workspace/admin/includes/functions.php:2
+[19-Dec-2017 22:50:24 UTC] PHP Fatal error:  require(): Failed opening required '../../../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/s3/init.php on line 3
+[19-Dec-2017 22:50:24 UTC] PHP Stack trace:
+[19-Dec-2017 22:50:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[19-Dec-2017 22:50:24 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:1
+[19-Dec-2017 22:50:24 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:50:24 UTC] PHP   4. require() /home/ubuntu/workspace/admin/includes/functions.php:2
+[19-Dec-2017 22:50:55 UTC] PHP Warning:  require(./././vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/s3/init.php on line 3
+[19-Dec-2017 22:50:55 UTC] PHP Stack trace:
+[19-Dec-2017 22:50:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[19-Dec-2017 22:50:55 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:1
+[19-Dec-2017 22:50:55 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:50:55 UTC] PHP   4. require() /home/ubuntu/workspace/admin/includes/functions.php:2
+[19-Dec-2017 22:50:55 UTC] PHP Fatal error:  require(): Failed opening required './././vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/s3/init.php on line 3
+[19-Dec-2017 22:50:55 UTC] PHP Stack trace:
+[19-Dec-2017 22:50:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[19-Dec-2017 22:50:55 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:1
+[19-Dec-2017 22:50:55 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:50:55 UTC] PHP   4. require() /home/ubuntu/workspace/admin/includes/functions.php:2
+[19-Dec-2017 22:51:20 UTC] PHP Fatal error:  Call to a member function putObject() on a non-object in /home/ubuntu/workspace/admin/includes/functions.php on line 34
+[19-Dec-2017 22:51:20 UTC] PHP Stack trace:
+[19-Dec-2017 22:51:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:51:20 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[19-Dec-2017 22:51:20 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[19-Dec-2017 22:53:18 UTC] PHP Fatal error:  Call to a member function putObject() on a non-object in /home/ubuntu/workspace/admin/includes/functions.php on line 34
+[19-Dec-2017 22:53:18 UTC] PHP Stack trace:
+[19-Dec-2017 22:53:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:53:18 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[19-Dec-2017 22:53:18 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[19-Dec-2017 22:54:30 UTC] PHP Warning:  require(../../s3/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 22:54:30 UTC] PHP Stack trace:
+[19-Dec-2017 22:54:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:54:30 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:1
+[19-Dec-2017 22:54:30 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:54:30 UTC] PHP Fatal error:  require(): Failed opening required '../../s3/init.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 22:54:30 UTC] PHP Stack trace:
+[19-Dec-2017 22:54:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:54:30 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:1
+[19-Dec-2017 22:54:30 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:54:41 UTC] PHP Warning:  require(.../s3/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 22:54:41 UTC] PHP Stack trace:
+[19-Dec-2017 22:54:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:54:41 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:1
+[19-Dec-2017 22:54:41 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:54:41 UTC] PHP Fatal error:  require(): Failed opening required '.../s3/init.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 22:54:41 UTC] PHP Stack trace:
+[19-Dec-2017 22:54:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:54:41 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:1
+[19-Dec-2017 22:54:41 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:55:23 UTC] PHP Fatal error:  Call to a member function putObject() on a non-object in /home/ubuntu/workspace/admin/includes/functions.php on line 34
+[19-Dec-2017 22:55:23 UTC] PHP Stack trace:
+[19-Dec-2017 22:55:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:55:23 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[19-Dec-2017 22:55:23 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[19-Dec-2017 22:56:35 UTC] PHP Warning:  require(s3/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 22:56:35 UTC] PHP Stack trace:
+[19-Dec-2017 22:56:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:56:35 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:1
+[19-Dec-2017 22:56:35 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:56:35 UTC] PHP Fatal error:  require(): Failed opening required 's3/init.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 22:56:35 UTC] PHP Stack trace:
+[19-Dec-2017 22:56:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:56:35 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:1
+[19-Dec-2017 22:56:35 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 22:57:16 UTC] PHP Fatal error:  Call to a member function putObject() on a non-object in /home/ubuntu/workspace/admin/includes/functions.php on line 34
+[19-Dec-2017 22:57:16 UTC] PHP Stack trace:
+[19-Dec-2017 22:57:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:57:16 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[19-Dec-2017 22:57:16 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[19-Dec-2017 22:59:45 UTC] PHP Fatal error:  Call to a member function putObject() on a non-object in /home/ubuntu/workspace/admin/includes/functions.php on line 34
+[19-Dec-2017 22:59:45 UTC] PHP Stack trace:
+[19-Dec-2017 22:59:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 22:59:45 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[19-Dec-2017 22:59:45 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[19-Dec-2017 23:03:13 UTC] PHP Warning:  include(/home/ubuntu/workspace/admin/includes/s3/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 23:03:13 UTC] PHP Stack trace:
+[19-Dec-2017 23:03:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[19-Dec-2017 23:03:13 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:1
+[19-Dec-2017 23:03:13 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 23:03:13 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/admin/includes/s3/init.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 23:03:13 UTC] PHP Stack trace:
+[19-Dec-2017 23:03:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[19-Dec-2017 23:03:13 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:1
+[19-Dec-2017 23:03:13 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 23:04:31 UTC] PHP Warning:  include(../s3/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 23:04:31 UTC] PHP Stack trace:
+[19-Dec-2017 23:04:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[19-Dec-2017 23:04:31 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:1
+[19-Dec-2017 23:04:31 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 23:04:31 UTC] PHP Warning:  include(): Failed opening '../s3/init.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/functions.php on line 2
+[19-Dec-2017 23:04:31 UTC] PHP Stack trace:
+[19-Dec-2017 23:04:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[19-Dec-2017 23:04:31 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:1
+[19-Dec-2017 23:04:31 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[19-Dec-2017 23:04:31 UTC] PHP Warning:  include(../s3/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/admin_header.php on line 5
+[19-Dec-2017 23:04:31 UTC] PHP Stack trace:
+[19-Dec-2017 23:04:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[19-Dec-2017 23:04:31 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:1
+[19-Dec-2017 23:04:31 UTC] PHP Warning:  include(): Failed opening '../s3/init.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/admin_header.php on line 5
+[19-Dec-2017 23:04:31 UTC] PHP Stack trace:
+[19-Dec-2017 23:04:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[19-Dec-2017 23:04:31 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:1
+[19-Dec-2017 23:04:39 UTC] PHP Warning:  include(../s3/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/admin_header.php on line 5
+[19-Dec-2017 23:04:39 UTC] PHP Stack trace:
+[19-Dec-2017 23:04:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[19-Dec-2017 23:04:39 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:1
+[19-Dec-2017 23:04:39 UTC] PHP Warning:  include(): Failed opening '../s3/init.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/admin_header.php on line 5
+[19-Dec-2017 23:04:39 UTC] PHP Stack trace:
+[19-Dec-2017 23:04:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/index.php:0
+[19-Dec-2017 23:04:39 UTC] PHP   2. include() /home/ubuntu/workspace/admin/index.php:1
+[19-Dec-2017 23:05:46 UTC] PHP Fatal error:  Call to a member function putObject() on a non-object in /home/ubuntu/workspace/admin/includes/functions.php on line 34
+[19-Dec-2017 23:05:46 UTC] PHP Stack trace:
+[19-Dec-2017 23:05:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 23:05:46 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[19-Dec-2017 23:05:46 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[19-Dec-2017 23:05:55 UTC] PHP Fatal error:  Call to a member function putObject() on a non-object in /home/ubuntu/workspace/admin/includes/functions.php on line 34
+[19-Dec-2017 23:05:55 UTC] PHP Stack trace:
+[19-Dec-2017 23:05:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 23:05:55 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[19-Dec-2017 23:05:55 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[19-Dec-2017 23:06:30 UTC] PHP Warning:  fopen(cms/5c120205f6852c56c16cfc9864a2c089.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/functions.php on line 38
+[19-Dec-2017 23:06:30 UTC] PHP Stack trace:
+[19-Dec-2017 23:06:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 23:06:30 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[19-Dec-2017 23:06:30 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[19-Dec-2017 23:06:30 UTC] PHP   4. fopen() /home/ubuntu/workspace/admin/includes/functions.php:38
+[19-Dec-2017 23:06:30 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[19-Dec-2017 23:06:52 UTC] PHP Warning:  fopen(cms/e79a4b15f10c8e02730a374d5731927b.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/functions.php on line 38
+[19-Dec-2017 23:06:52 UTC] PHP Stack trace:
+[19-Dec-2017 23:06:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 23:06:52 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[19-Dec-2017 23:06:52 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[19-Dec-2017 23:06:52 UTC] PHP   4. fopen() /home/ubuntu/workspace/admin/includes/functions.php:38
+[19-Dec-2017 23:06:52 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[19-Dec-2017 23:13:23 UTC] PHP Warning:  move_uploaded_file(cms/6a3ced1b41b34482ccda25a7d8bfaf98.png): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/functions.php on line 31
+[19-Dec-2017 23:13:23 UTC] PHP Stack trace:
+[19-Dec-2017 23:13:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 23:13:23 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[19-Dec-2017 23:13:23 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[19-Dec-2017 23:13:23 UTC] PHP   4. move_uploaded_file() /home/ubuntu/workspace/admin/includes/functions.php:31
+[19-Dec-2017 23:13:23 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpATJNQi' to 'cms/6a3ced1b41b34482ccda25a7d8bfaf98.png' in /home/ubuntu/workspace/admin/includes/functions.php on line 31
+[19-Dec-2017 23:13:23 UTC] PHP Stack trace:
+[19-Dec-2017 23:13:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 23:13:23 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[19-Dec-2017 23:13:23 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[19-Dec-2017 23:13:23 UTC] PHP   4. move_uploaded_file() /home/ubuntu/workspace/admin/includes/functions.php:31
+[19-Dec-2017 23:13:57 UTC] PHP Warning:  move_uploaded_file(cms/b310dac5756c4da2ca899eb067fd5c03.png): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/functions.php on line 31
+[19-Dec-2017 23:13:57 UTC] PHP Stack trace:
+[19-Dec-2017 23:13:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 23:13:57 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[19-Dec-2017 23:13:57 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[19-Dec-2017 23:13:57 UTC] PHP   4. move_uploaded_file() /home/ubuntu/workspace/admin/includes/functions.php:31
+[19-Dec-2017 23:13:57 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phplqSMiQ' to 'cms/b310dac5756c4da2ca899eb067fd5c03.png' in /home/ubuntu/workspace/admin/includes/functions.php on line 31
+[19-Dec-2017 23:13:57 UTC] PHP Stack trace:
+[19-Dec-2017 23:13:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[19-Dec-2017 23:13:57 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[19-Dec-2017 23:13:57 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[19-Dec-2017 23:13:57 UTC] PHP   4. move_uploaded_file() /home/ubuntu/workspace/admin/includes/functions.php:31
+[20-Dec-2017 00:15:20 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the GetObject operation:
+[Key] expected string length to be >= 1, but found string length of 0' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('GetObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(403): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#5 /home/ubuntu/workspace/vendor/a in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 00:17:14 UTC] PHP Fatal error:  Cannot use object of type Generator as array in /home/ubuntu/workspace/admin/includes/functions.php on line 117
+[20-Dec-2017 00:17:14 UTC] PHP Stack trace:
+[20-Dec-2017 00:17:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 00:17:14 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:34
+[20-Dec-2017 00:17:14 UTC] PHP   3. show_all_posts_admin() /home/ubuntu/workspace/admin/includes/view_all_posts.php:66

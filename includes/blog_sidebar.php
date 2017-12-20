@@ -29,10 +29,11 @@
                       <div class="input-group">
                         <input name="password" type="password" class="form-control" placeholder="Enter Password">
                         <span class="input-group-btn" >
-                          <button class="btn btn-primary" name="login" type="submit" value="Login">Submit</button>
+                          <button class="btn btn-primary" name="login" type="submit" value="Login" style="margin-bottom: 10px;" >Submit</button>
                         </span>
                       </div>
                       </form>
+                      <a style="font-size: 12px;" href="forgot_password.php">Forgot your password?</a>
                   </div>
                 <?php } ?>
 
