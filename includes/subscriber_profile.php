@@ -111,7 +111,7 @@ if(isset($_SESSION['username'])){
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.php" style="margin-top: 12px;" >CMS</a>
+                <a class="navbar-brand" href="../index.php" style="margin-top: -4px; " ><img  src="../images/cms.png" width="53"></a>
             </div>
             <?php
                 if($_SESSION['username'] != null){
@@ -136,7 +136,7 @@ if(isset($_SESSION['username'])){
             </ul>
             <?php } ?>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 12px;">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 14px;">
                 <ul class="nav navbar-nav">
                   <?php  
                     $query = "SELECT * FROM categories";

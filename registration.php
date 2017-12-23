@@ -61,7 +61,9 @@ if(isset($_POST['submit'])){
         <div class="row">
             <div class="col-xs-6 col-xs-offset-3">
                 <div class="form-wrap">
-                <h1>Register</h1>
+                <h1><span style="float: left;">Register</span>
+                <span style="float: right;"><a href="../index.php">LogIn</a></span>
+                </h1>
                     <form role="form" action="registration.php" method="post" id="login-form" autocomplete="off">
                         <div class="form-group">
                             <label for="username" class="sr-only">username</label>

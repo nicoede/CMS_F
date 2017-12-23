@@ -16,7 +16,7 @@ include "admin/includes/functions.php";
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php" style="margin-top: -3px; " ><img  src="images/cms.png" width="56"></a>
+                <a class="navbar-brand" href="index.php" style="margin-top: -4px; " ><img  src="images/cms.png" width="53"></a>
             </div>
             <?php
                 if($_SESSION['username'] != null){
