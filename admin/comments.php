@@ -1,4 +1,7 @@
-<?php include "includes/admin_header.php"; ?>
+<?php include "includes/admin_header.php"; 
+include "modals/delete_comment_modal.php";
+
+?>
 
 
     <div id="wrapper" style="margin-top:-20px;">
@@ -49,3 +52,11 @@
         <!-- /#page-wrapper -->
 
    <?php include "includes/admin_footer.php"; ?>
+   
+<script>
+  $(document).ready(function(){
+    $(".comment_delete_class").on('click', function(){
+      $('#delete_comment_modal_id').modal('show');
+    });
+  });
+</script>

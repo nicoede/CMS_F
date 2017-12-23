@@ -1,6 +1,6 @@
 <?php include "includes/db.php" ?>
 <?php include "includes/header.php" ?>
-<?php include "admin/includes/functions.php" ?>
+
 
     <!-- Navigation -->
     <?php include "includes/navigation.php"?>
@@ -64,10 +64,19 @@
                 
                 <?php 
                     if(isset($_POST['create_comment'])){
+                        $user_name_session = $_SESSION['username'];
+                        $user_email_query = "SELECT * FROM users WHERE username = '{$user_name_session}' ";
+                        $user_email_query_result = mysqli_query($connection, $user_email_query);
+                        confirm($user_email_query_result);
+                        while($row3 = mysqli_fetch_assoc($user_email_query_result)){
+                          $username = $row3['username'];
+                          $user_email = $row3['user_email'];
+                        }
+                        
                         $the_post_id = $_GET['p_id'];
                         
-                        $comment_author = $_POST['comment_author'];
-                        $comment_email = $_POST['comment_email'];
+                        $comment_author = $username;
+                        $comment_email = $user_email;
                         $comment_content = $_POST['comment_content'];
                         
                         if(!empty($comment_author) && !empty($comment_email) && !empty($comment_email)){
@@ -91,16 +100,6 @@
                 <div class="well" style="margin-top: 20px;">
                     <h4>Leave a Comment:</h4>
                     <form action="" method="post" role="form">
-                        <div class="form-group">
-                            <label for="Author">Author:</label>
-                            <input class="form-control" type="text" name="comment_author">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="Email">Email:</label>
-                            <input class="form-control" type="email" name="comment_email">
-                        </div>
-                        
                         <div class="form-group">
                             <label for="Comment">Your Comment:</label>
                             <textarea class="form-control" name="comment_content" rows="3"></textarea>
@@ -130,12 +129,18 @@
                         $comment_content = $row['comment_content'];
                         $comment_author = $row['comment_author'];
                         ?>
-                        
+                        <?php 
+                        $userimage_query = "SELECT user_image FROM users WHERE username = '{$comment_author}' ";
+                        $userimage_result = mysqli_query($connection, $userimage_query);
+                        confirm($userimage_result);
+                        $row2 = mysqli_fetch_assoc($userimage_result);
+                        $userimage = $row2['user_image'];
+                        ?>
                         <!-- Comment -->
                         <div class="media">
-                            <a class="pull-left" href="#">
-                                <img class="media-object" src="http://placehold.it/64x64" alt="">
-                            </a>
+                            <span class="pull-left" >
+                                <?php echo "<img width='64' src='https://s3-ap-southeast-1.amazonaws.com/nicoedeimages/cms/{$userimage}' alt='image'>"; ?>
+                            </span>
                             <div class="media-body">
                                 <h4 class="media-heading"><?php echo $comment_author; ?>
                                     <small><?php echo $comment_date; ?></small>

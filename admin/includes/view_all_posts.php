@@ -1,3 +1,4 @@
+<?php include "modals/delete_post_modal.php"; ?>
 <?php 
   if(isset($_POST['checkBoxArray'])){
     foreach($_POST['checkBoxArray'] as $checkBox_post_id){
@@ -70,3 +71,14 @@
   </table>
 
 </form>
+
+<script>
+  $(document).ready(function(){
+    $(".delete_post_link_class").on('click', function(){
+      var id = $(this).attr("rel");
+      var delete_url = "posts.php?delete="+ id +"";
+      $(".post_delete_link").attr("href", delete_url);
+      $('#myModal').modal('show');
+    });
+  });
+</script>

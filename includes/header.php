@@ -13,13 +13,18 @@
     <title>CMS - Home</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/blog-home.css" rel="stylesheet">
-
+    <link href="../css/blog-home.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <!-- Custom Fonts -->
-    <link href="admin/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../admin/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/scripts.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

@@ -13,46 +13,52 @@ session_start();
   function add_post_admin(){
     include "../s3/init.php"; 
     global $connection;
-    if(isset($_POST['create_post']) && isset($_FILES['image'])){
+    if(isset($_POST['create_post'])){
       	$file = $_FILES['image'];
 
         $name = $file['name'];
-        $tmp_name = $file['tmp_name'];
-        
-        $ext = explode('.', $name);
-        $ext = strtolower(end($ext));
-        
-        $key = md5(uniqid());
-        
-        $temp_file_name = "{$key}.{$ext}";
-        
-        $temp_file_path = "cms/{$temp_file_name}";
-        
-        move_uploaded_file($tmp_name, $temp_file_path);
-        
-        try {
-          // Upload data.
-          $result = $s3->putObject(array(
-             'Bucket'=> $config['s3']['bucket'],
-              'Key'   => "cms/{$name}",
-              'Body'  => fopen($temp_file_path, 'rb'),
-              'ACL'   => 'public-read'
-         ));
-        
-          // Print the URL to the object.
-        } catch (S3Exception $e) {
-            echo $e->getMessage() . "\n";
+        if($name == ''){
+          $post_image = 'post.png';
+        }else{
+          $tmp_name = $file['tmp_name'];
+          
+          $ext = explode('.', $name);
+          $ext = strtolower(end($ext));
+          
+          $key = md5(uniqid());
+          
+          $temp_file_name = "{$key}.{$ext}";
+          
+          $temp_file_path = "cms/{$temp_file_name}";
+          
+          move_uploaded_file($tmp_name, $temp_file_path);
+          
+          try {
+            // Upload data.
+            $result = $s3->putObject(array(
+               'Bucket'=> $config['s3']['bucket'],
+                'Key'   => "cms/{$name}",
+                'Body'  => fopen($temp_file_path, 'rb'),
+                'ACL'   => 'public-read'
+           ));
+          
+            // Print the URL to the object.
+          } catch (S3Exception $e) {
+              echo $e->getMessage() . "\n";
+          }
+          
+          unlink($temp_file_path);
+          
+           $post_image = $_FILES['image']['name'];
+           $post_image_tmp = $_FILES['image']['tmp_name'];
         }
-        
-        unlink($temp_file_path);
       
       $post_title = $_POST['post_title'];
       $post_author = $_POST['post_author'];
       $post_category_id = $_POST['post_category_id'];
       $post_status = $_POST['post_status'];
       
-      $post_image = $_FILES['image']['name'];
-      $post_image_tmp = $_FILES['image']['tmp_name'];
+     
       
       $post_tags = $_POST['post_tags'];
       $post_content = $_POST['post_content'];
@@ -61,12 +67,9 @@ session_start();
       $query = "INSERT INTO posts(post_category_id, post_title, post_author, post_date, post_image, post_content, post_tags, post_status) VALUES ({$post_category_id}, '{$post_title}', '{$post_author}', now(), '{$post_image}', '{$post_content}', '{$post_tags}', '{$post_status}') ";
       $add_posts_query = mysqli_query($connection, $query);
       
-      if(!confirm($add_posts_query)){
-        $message = "Post Created!";
-        echo "<script type='text/javascript'>alert('$message');</script>";
-      }
+      confirm($add_posts_query);
       
-      header("Refresh: 0.5; url=posts.php");
+      header("Refresh: 0.1; url=posts.php");
     }
   }
   
@@ -118,7 +121,7 @@ session_start();
         echo "<td>{$post_comment_count}</td>";
         echo "<td>{$post_date}</td>";
         echo "<td><a href='posts.php?source=edit_post&p_id={$post_id}'>Edit</a></td>";
-        echo "<td><a onClick=\"javascript: return confirm('Are you sure you want to Delete?');\" href='posts.php?delete={$post_id}'>Delete</a></td>";
+        echo "<td><a rel='$post_id' href='javascript:void(0)' class='delete_post_link_class' >Delete</a></td>";
       echo "</tr>";
     }
   }
@@ -129,11 +132,8 @@ session_start();
       $the_post_id = $_GET['delete'];
       $query = "DELETE FROM posts WHERE post_id = {$the_post_id}";
       $delete_query = mysqli_query($connection, $query);
-      if(!confirm($delete_query)){
-        $message = "Post Deleted!";
-        echo "<script type='text/javascript'>alert('$message');</script>";
-      }
-      header("Refresh: 0.5; url=posts.php");
+      confirm($delete_query);
+      header("Refresh: 0.1; url=posts.php");
     }
   }
   
@@ -144,19 +144,17 @@ session_start();
       $cat_title = $_POST['cat_title'];
       
       if($cat_title == "" || empty($cat_title)){
-        $message = "THIS FIELD SHOULD NOT BE EMPTY!";
-        echo "<script type='text/javascript'>alert('$message');</script>";
+        $suc = 1;
       }else{
         $query = "INSERT INTO categories(cat_title) ";
         $query .= "VALUE('{$cat_title}') ";
         
         $create_category_query = mysqli_query($connection, $query);
         
-        if(!confirm($create_category_query)){
-          $message = "Category Created!";
-          echo "<script type='text/javascript'>alert('$message');</script>";
-        }
+        confirm($create_category_query);
+        $suc = 0;
       }
+      return $suc;
     }
   }
   
@@ -171,7 +169,7 @@ session_start();
       echo "<tr>";
       echo "<td>{$cat_id}</td>";
       echo "<td>{$cat_title}</td>";
-      echo "<td><a href='categories.php?delete={$cat_id}'>Delete</a></td>";
+      echo "<td><a rel='$cat_id' href='javascript:void(0)' class='delete_category_link_class' >Delete</a></td>";
       echo "<td><a href='categories.php?edit={$cat_id}'>Edit</a></td>";
       echo "</tr>";
     }
@@ -183,11 +181,8 @@ session_start();
       $get_cat_id = $_GET['delete'];
       $query = "DELETE FROM categories WHERE cat_id = {$get_cat_id} ";
       $delete_query = mysqli_query($connection, $query);
-      if(!confirm($delete_query)){
-        $message = "Category Deleted!";
-        echo "<script type='text/javascript'>alert('$message');</script>";
-      }
-      header("Refresh: 0.5; url=categories.php");
+      confirm($delete_query);
+      header("Refresh: 0.1; url=categories.php");
     }
   }
   
@@ -222,7 +217,7 @@ session_start();
         echo "<td>{$comment_date}</td>";
         echo "<td><a href='comments.php?approve={$comment_id}'>Approve</a></td>";
         echo "<td><a href='comments.php?disapprove={$comment_id}'>Disapprove</a></td>";
-        echo "<td><a href='comments.php?delete={$comment_id}&c_p_id={$comment_post_id}'>Delete</a></td>";
+        echo "<td><a class='comment_delete_class' href='comments.php?delete={$comment_id}&c_p_id={$comment_post_id}'>Delete</a></td>";
       echo "</tr>";
     }
   }
@@ -260,10 +255,7 @@ session_start();
       $query = "DELETE FROM comments WHERE comment_id = {$get_comment_id} ";
       $delete_comment_query = mysqli_query($connection, $query);
       
-      if(!confirm($delete_comment_query)){
-        $message = "Comment Deleted!";
-        echo "<script type='text/javascript'>alert('$message');</script>";
-      }
+      confirm($delete_comment_query);
       
       $quesedane = $_GET['p_id'];
       $query_count = "UPDATE posts set post_comment_count = post_comment_count - 1 ";
@@ -302,7 +294,7 @@ session_start();
           echo "<td>{$user_date}</td>";
           
           echo "<td><a href='users.php?source=edit_user&u_id={$user_id}'>Edit</a></td>";
-          echo "<td><a href='users.php?delete={$user_id}'>Delete</a></td>";
+          echo "<td><a class='user_delete_class' href='users.php?delete={$user_id}'>Delete</a></td>";
         echo "</tr>";
       }else{
         echo "<h1>No users are currently subscribed</h1>";
@@ -337,10 +329,7 @@ session_start();
       $query .= "VALUES ('{$username}', '{$user_firstname}', '{$user_lastname}', '{$user_email}', '{$hashed_password}', '{$user_role}', '{$user_iamge}', now()) ";
       $add_user_query = mysqli_query($connection, $query);
       
-      if(!confirm($add_user_query)){
-        $message = "User Created!";
-        echo "<script type='text/javascript'>alert('$message');</script>";
-      }
+      confirm($add_user_query);
     }
   }
   
@@ -352,10 +341,7 @@ session_start();
       $query = "DELETE FROM users WHERE user_id = {$get_user_id} ";
       $delete_comment_query = mysqli_query($connection, $query);
       
-      if(!confirm($connection)){
-        $message = "User Deleted!";
-        echo "<script type='text/javascript'>alert('$message');</script>";
-      }
+      confirm($connection);
       
       header("Refresh: 0.5; url=users.php");
     }

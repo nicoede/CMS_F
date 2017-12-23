@@ -1,3 +1,5 @@
+<?php include "modals/delete_user_modal.php"; ?>
+
 <table class="table table-bordered table-hover">
 <thead>
   <tr>
@@ -19,3 +21,11 @@
   ?>
 </tbody>
 </table>
+
+<script>
+  $(document).ready(function(){
+    $(".user_delete_class").on('click', function(){
+      $('#delete_user_modal_id').modal('show');
+    });
+  });
+</script>

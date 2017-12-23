@@ -1,4 +1,5 @@
 <?php
+  include "modals/add_user_modal.php";
   add_user_admin();
 ?>
 
@@ -44,6 +45,15 @@
   
   
   <div class="form-group">
-    <input class="btn btn-primary" type="submit" name="create_user" value="Create User"/>
+    <input class="btn btn-primary addUser" type="submit" name="create_user" value="Create User"/>
   </div>
 </form>
+
+
+<script>
+  $(document).ready(function(){
+    $(".addUser").on('click', function(){
+      $('#add_user_modal_id').modal('show');
+    });
+  });
+</script>

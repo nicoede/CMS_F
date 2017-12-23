@@ -1,0 +1,7 @@
+* {
+ font-family: 'Fjalla One';
+}
+
+.pager li .active_link{
+    background: #000 !important;
+}

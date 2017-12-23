@@ -1,4 +1,6 @@
 <?php
+include "modals/edit_user_modal.php";
+
   if(isset($_GET['u_id'])){
     $the_user_id = $_GET['u_id'];
     
@@ -19,46 +21,30 @@
   }
 
   if(isset($_POST['update_user'])){
-    $username = $_POST['username'];
-    $user_firstname = $_POST['user_firstname'];
-    $user_lastname = $_POST['user_lastname'];
-    $user_email = $_POST['user_email'];
-    $user_password = $_POST['user_password'];
     $user_role = $_POST['user_role'];
-    $user_image = $_FILES['user_image']['name'];
-    $user_image_tmp = $_FILES['user_image']['tmp_name'];
     
-    move_uploaded_file($user_image_temp, "../images/$user_image" );
-    
-    $query = "SELECT randSalt FROM users";
-    $select_randsalt_query = mysqli_query($connection, $query);
-    confirm($select_randsalt_query);
-    
-    $row = mysqli_fetch_array($select_randsalt_query);
-    $salt = $row['randSalt'];
-    $hashed_password = crypt($user_password, $salt);
-    
-    $query = "UPDATE users SET username = '{$username}', user_firstname = '{$user_firstname}', user_lastname = '{$user_lastname}', ";
-    $query .= "user_email = '{$user_email}', user_password = '{$hashed_password}', user_role = '{$user_role}' "; 
+    $query = "UPDATE users SET user_role = '{$user_role}' "; 
     $query .= "WHERE user_id = {$the_user_id} ";
     
     $update_user = mysqli_query($connection, $query);
     
-    if(!confirm($update_user)){
-      $message = "User Updated!";
-      echo "<script type='text/javascript'>alert('$message');</script>";
-    }
+    confirm($update_user);
     
     header("Refresh: 0.5; url=users.php");
   }
 ?>
 
 <form action="" method="post" enctype="multipart/form-data">
-  <div class="form-group">
-    <label for="username">Username</label>
-    <input value="<?php echo $username?>" type="text" class="form-control" name="username"/>
-  </div>
-
+  <div class="well">Username: <?php echo $username?>
+  <br>
+  First Name: <?php echo $user_firstname?>
+  <br>
+  Last Name: <?php echo $user_lastname?>
+  <br>
+  Email: <?php echo $user_email?>
+  <br><br>
+  <?php echo "<img width='64' style='margin-right: 5px;' src='https://s3-ap-southeast-1.amazonaws.com/nicoedeimages/cms/{$user_image}' alt='image'>"; ?></div>
+  <br><br>
   <div class="form-group">
     <select class="form-control" name="user_role" id="">
       <option value='Subscriber'>Subscriber</option>
@@ -67,31 +53,14 @@
   </div>
   
   <div class="form-group">
-    <label for="user_firstname">First Name:</label>
-    <input value="<?php echo $user_firstname?>" type="text" class="form-control" name="user_firstname"/>
-  </div>
-  
-  <div class="form-group">
-    <label for="user_lastname">Last Name:</label>
-    <input value="<?php echo $user_lastname?>" type="text" class="form-control" name="user_lastname"/>
-  </div>
-  
-  <div class="form-group">
-    <label for="user_email">Email:</label>
-    <input value="<?php echo $user_email?>" type="email" class="form-control" name="user_email"/>
-  </div>
-  
-  <div class="form-group">
-    <label for="user_password">Password:</label>
-    <input type="password" class="form-control" name="user_password"/>
-  </div>
-  
-  <div class="form-group">
-    <img width='100' src="../images/<?php echo $user_image; ?>" alt="">
-  </div>
-  
-  
-  <div class="form-group">
-    <input class="btn btn-primary" type="submit" name="update_user" value="Update User"/>
+    <input class="btn btn-primary updateUser" type="submit" name="update_user" value="Update User"/>
   </div>
 </form>
+
+<script>
+  $(document).ready(function(){
+    $(".updateUser").on('click', function(){
+      $('#user_updated_modal_id').modal('show');
+    });
+  });
+</script>

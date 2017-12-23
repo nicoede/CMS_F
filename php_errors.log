@@ -524,3 +524,755 @@ Stack trace:
 [20-Dec-2017 00:17:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
 [20-Dec-2017 00:17:14 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:34
 [20-Dec-2017 00:17:14 UTC] PHP   3. show_all_posts_admin() /home/ubuntu/workspace/admin/includes/view_all_posts.php:66
+[20-Dec-2017 07:45:30 UTC] PHP Warning:  include(includes/footer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 144
+[20-Dec-2017 07:45:30 UTC] PHP Stack trace:
+[20-Dec-2017 07:45:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 07:45:30 UTC] PHP Warning:  include(): Failed opening 'includes/footer.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/subscriber_profile.php on line 144
+[20-Dec-2017 07:45:30 UTC] PHP Stack trace:
+[20-Dec-2017 07:45:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 07:47:21 UTC] PHP Warning:  include(includes/footer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 144
+[20-Dec-2017 07:47:21 UTC] PHP Stack trace:
+[20-Dec-2017 07:47:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 07:47:21 UTC] PHP Warning:  include(): Failed opening 'includes/footer.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/subscriber_profile.php on line 144
+[20-Dec-2017 07:47:21 UTC] PHP Stack trace:
+[20-Dec-2017 07:47:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 07:48:05 UTC] PHP Warning:  include(includes/footer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 144
+[20-Dec-2017 07:48:05 UTC] PHP Stack trace:
+[20-Dec-2017 07:48:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 07:48:05 UTC] PHP Warning:  include(): Failed opening 'includes/footer.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/subscriber_profile.php on line 144
+[20-Dec-2017 07:48:05 UTC] PHP Stack trace:
+[20-Dec-2017 07:48:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 07:48:57 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/includes/subscriber_profile.php on line 9
+[20-Dec-2017 07:48:57 UTC] PHP Stack trace:
+[20-Dec-2017 07:48:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 07:48:57 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/includes/subscriber_profile.php:9
+[20-Dec-2017 07:48:57 UTC] PHP Fatal error:  Call to undefined function confirm() in /home/ubuntu/workspace/includes/subscriber_profile.php on line 10
+[20-Dec-2017 07:48:57 UTC] PHP Stack trace:
+[20-Dec-2017 07:48:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 07:49:14 UTC] PHP Fatal error:  Call to undefined function confirm() in /home/ubuntu/workspace/includes/subscriber_profile.php on line 11
+[20-Dec-2017 07:49:14 UTC] PHP Stack trace:
+[20-Dec-2017 07:49:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 07:50:18 UTC] PHP Warning:  fopen(../admin/cms/926907f4efdacf6d611a6035b6e3710d.): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 47
+[20-Dec-2017 07:50:18 UTC] PHP Stack trace:
+[20-Dec-2017 07:50:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 07:50:18 UTC] PHP   2. fopen() /home/ubuntu/workspace/includes/subscriber_profile.php:47
+[20-Dec-2017 07:50:18 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 08:03:32 UTC] PHP Warning:  fopen(../admin/cms/b0d933e643acf77da6aa76939ebfd005.): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 47
+[20-Dec-2017 08:03:32 UTC] PHP Stack trace:
+[20-Dec-2017 08:03:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 08:03:32 UTC] PHP   2. fopen() /home/ubuntu/workspace/includes/subscriber_profile.php:47
+[20-Dec-2017 08:03:32 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 08:05:03 UTC] PHP Warning:  fopen(../admin/cms/53b0f1f1d470600625dc1f5eec51b8db.): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 47
+[20-Dec-2017 08:05:03 UTC] PHP Stack trace:
+[20-Dec-2017 08:05:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 08:05:03 UTC] PHP   2. fopen() /home/ubuntu/workspace/includes/subscriber_profile.php:47
+[20-Dec-2017 08:05:03 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 08:05:46 UTC] PHP Warning:  fopen(./admin/cms/61aacb8b59c9ce3cb050dc10b3fb13cc.): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 47
+[20-Dec-2017 08:05:46 UTC] PHP Stack trace:
+[20-Dec-2017 08:05:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 08:05:46 UTC] PHP   2. fopen() /home/ubuntu/workspace/includes/subscriber_profile.php:47
+[20-Dec-2017 08:05:46 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 08:06:04 UTC] PHP Warning:  fopen(admin/cms/251d1afe078d15615c0548b6d0a0a443.): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 47
+[20-Dec-2017 08:06:04 UTC] PHP Stack trace:
+[20-Dec-2017 08:06:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 08:06:04 UTC] PHP   2. fopen() /home/ubuntu/workspace/includes/subscriber_profile.php:47
+[20-Dec-2017 08:06:04 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 08:12:05 UTC] PHP Warning:  fopen(cms/fae7d503b7785b9a21e8f28f2d776a1b.): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 47
+[20-Dec-2017 08:12:05 UTC] PHP Stack trace:
+[20-Dec-2017 08:12:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 08:12:05 UTC] PHP   2. fopen() /home/ubuntu/workspace/includes/subscriber_profile.php:47
+[20-Dec-2017 08:12:05 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 08:12:43 UTC] PHP Warning:  fopen(cms/f70b162647783431fcd52e7f68724711.): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 47
+[20-Dec-2017 08:12:43 UTC] PHP Stack trace:
+[20-Dec-2017 08:12:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 08:12:43 UTC] PHP   2. fopen() /home/ubuntu/workspace/includes/subscriber_profile.php:47
+[20-Dec-2017 08:12:43 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 08:13:39 UTC] PHP Warning:  fopen(../admin/cms/71c50f4f98821641ee51e964d52e2bad.): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 47
+[20-Dec-2017 08:13:39 UTC] PHP Stack trace:
+[20-Dec-2017 08:13:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 08:13:39 UTC] PHP   2. fopen() /home/ubuntu/workspace/includes/subscriber_profile.php:47
+[20-Dec-2017 08:13:39 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 08:19:28 UTC] PHP Warning:  fopen(../admin/cms/13cae7833904db61c6c96861ce136724.): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 47
+[20-Dec-2017 08:19:28 UTC] PHP Stack trace:
+[20-Dec-2017 08:19:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 08:19:28 UTC] PHP   2. fopen() /home/ubuntu/workspace/includes/subscriber_profile.php:47
+[20-Dec-2017 08:19:28 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 08:20:16 UTC] PHP Warning:  fopen(../cms/d6b09b0ecfd78a9ae13f25b079c4db86.): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 47
+[20-Dec-2017 08:20:16 UTC] PHP Stack trace:
+[20-Dec-2017 08:20:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 08:20:16 UTC] PHP   2. fopen() /home/ubuntu/workspace/includes/subscriber_profile.php:47
+[20-Dec-2017 08:20:16 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 08:20:41 UTC] PHP Warning:  fopen(admin/cms/dc7d8267af3ea470fa33f7729f3ef675.): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 47
+[20-Dec-2017 08:20:41 UTC] PHP Stack trace:
+[20-Dec-2017 08:20:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 08:20:41 UTC] PHP   2. fopen() /home/ubuntu/workspace/includes/subscriber_profile.php:47
+[20-Dec-2017 08:20:41 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 10:10:52 UTC] PHP Parse error:  syntax error, unexpected '*' in /home/ubuntu/workspace/includes/subscriber_profile.php on line 88
+[20-Dec-2017 10:11:20 UTC] PHP Warning:  fopen(cms/a3264037e4bee60cd20771ca3d1bda44.): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 47
+[20-Dec-2017 10:11:20 UTC] PHP Stack trace:
+[20-Dec-2017 10:11:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 10:11:20 UTC] PHP   2. fopen() /home/ubuntu/workspace/includes/subscriber_profile.php:47
+[20-Dec-2017 10:11:20 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 10:12:48 UTC] PHP Warning:  fopen(cms/24045db31bca44892e50e5f38b181229.): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 47
+[20-Dec-2017 10:12:48 UTC] PHP Stack trace:
+[20-Dec-2017 10:12:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 10:12:48 UTC] PHP   2. fopen() /home/ubuntu/workspace/includes/subscriber_profile.php:47
+[20-Dec-2017 10:12:48 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 10:13:59 UTC] PHP Warning:  fopen(cms/35ac3a69fd5b137550951d0821df3c8d.): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 47
+[20-Dec-2017 10:13:59 UTC] PHP Stack trace:
+[20-Dec-2017 10:13:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 10:13:59 UTC] PHP   2. fopen() /home/ubuntu/workspace/includes/subscriber_profile.php:47
+[20-Dec-2017 10:13:59 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 10:14:46 UTC] PHP Warning:  fopen(cms/85a2bd3308d45f9434924a14808d4000.): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 47
+[20-Dec-2017 10:14:46 UTC] PHP Stack trace:
+[20-Dec-2017 10:14:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 10:14:46 UTC] PHP   2. fopen() /home/ubuntu/workspace/includes/subscriber_profile.php:47
+[20-Dec-2017 10:14:46 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 10:20:44 UTC] PHP Warning:  move_uploaded_file(cms/7f3bc0f165fc55ba8abe5cbd6a86484f.png): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 40
+[20-Dec-2017 10:20:44 UTC] PHP Stack trace:
+[20-Dec-2017 10:20:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 10:20:44 UTC] PHP   2. move_uploaded_file() /home/ubuntu/workspace/includes/subscriber_profile.php:40
+[20-Dec-2017 10:20:44 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phptqevd9' to 'cms/7f3bc0f165fc55ba8abe5cbd6a86484f.png' in /home/ubuntu/workspace/includes/subscriber_profile.php on line 40
+[20-Dec-2017 10:20:44 UTC] PHP Stack trace:
+[20-Dec-2017 10:20:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 10:20:44 UTC] PHP   2. move_uploaded_file() /home/ubuntu/workspace/includes/subscriber_profile.php:40
+[20-Dec-2017 10:47:38 UTC] PHP Warning:  fopen(cms/e31f8a1617173cde24ca309734541276.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 46
+[20-Dec-2017 10:47:38 UTC] PHP Stack trace:
+[20-Dec-2017 10:47:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 10:47:38 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 10:47:38 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:46
+[20-Dec-2017 10:47:38 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 21:32:23 UTC] PHP Warning:  fopen(cms/6e06c51a576e243db6764b6f675fe2de.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 47
+[20-Dec-2017 21:32:23 UTC] PHP Stack trace:
+[20-Dec-2017 21:32:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 21:32:23 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 21:32:23 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:47
+[20-Dec-2017 21:32:23 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 21:33:06 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/admin/includes/edit_post.php on line 148
+[20-Dec-2017 21:33:06 UTC] PHP Stack trace:
+[20-Dec-2017 21:33:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 21:33:42 UTC] PHP Warning:  fopen(cms/82f019012bace4f1713f06e1ee98b56e.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 47
+[20-Dec-2017 21:33:42 UTC] PHP Stack trace:
+[20-Dec-2017 21:33:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 21:33:42 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 21:33:42 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:47
+[20-Dec-2017 21:33:42 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 21:41:04 UTC] PHP Warning:  fopen(cms/e18a12aa97ed71f357c7ca0a9f8cead1.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 47
+[20-Dec-2017 21:41:04 UTC] PHP Stack trace:
+[20-Dec-2017 21:41:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 21:41:04 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 21:41:04 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:47
+[20-Dec-2017 21:41:04 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 21:47:15 UTC] PHP Warning:  fopen(cms/6c916aa747b20379d9eb332532b4fe1a.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 47
+[20-Dec-2017 21:47:15 UTC] PHP Stack trace:
+[20-Dec-2017 21:47:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 21:47:15 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 21:47:15 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:47
+[20-Dec-2017 21:47:15 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 21:48:22 UTC] PHP Warning:  fopen(cms/010cfe1e6c4f68ca58af4ad708a3a65d.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 47
+[20-Dec-2017 21:48:22 UTC] PHP Stack trace:
+[20-Dec-2017 21:48:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 21:48:22 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 21:48:22 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:47
+[20-Dec-2017 21:48:22 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 21:49:01 UTC] PHP Warning:  fopen(cms/380f4d9399653a784950a06499802f5d.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 47
+[20-Dec-2017 21:49:01 UTC] PHP Stack trace:
+[20-Dec-2017 21:49:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 21:49:01 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 21:49:01 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:47
+[20-Dec-2017 21:49:01 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 21:50:53 UTC] PHP Warning:  fopen(cms/19fe65aa08e14bbac37afc3af15d43e7.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 48
+[20-Dec-2017 21:50:53 UTC] PHP Stack trace:
+[20-Dec-2017 21:50:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 21:50:53 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 21:50:53 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:48
+[20-Dec-2017 21:50:53 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 21:51:59 UTC] PHP Warning:  fopen(cms/6780549a53dc554eebf7866c41a336ae.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 48
+[20-Dec-2017 21:51:59 UTC] PHP Stack trace:
+[20-Dec-2017 21:51:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 21:51:59 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 21:51:59 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:48
+[20-Dec-2017 21:51:59 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 21:54:11 UTC] PHP Warning:  fopen(cms/4649262981c17d9abefde2a9b94ac41e.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 48
+[20-Dec-2017 21:54:11 UTC] PHP Stack trace:
+[20-Dec-2017 21:54:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 21:54:11 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 21:54:11 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:48
+[20-Dec-2017 21:54:11 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 21:56:56 UTC] PHP Warning:  Illegal string offset 'name' in /home/ubuntu/workspace/admin/includes/edit_post.php on line 63
+[20-Dec-2017 21:56:56 UTC] PHP Stack trace:
+[20-Dec-2017 21:56:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 21:56:56 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 21:56:56 UTC] PHP Warning:  Illegal string offset 'tmp_name' in /home/ubuntu/workspace/admin/includes/edit_post.php on line 64
+[20-Dec-2017 21:56:56 UTC] PHP Stack trace:
+[20-Dec-2017 21:56:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 21:56:56 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 21:57:32 UTC] PHP Warning:  Illegal string offset 'name' in /home/ubuntu/workspace/admin/includes/edit_post.php on line 63
+[20-Dec-2017 21:57:32 UTC] PHP Stack trace:
+[20-Dec-2017 21:57:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 21:57:32 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 21:57:32 UTC] PHP Warning:  Illegal string offset 'tmp_name' in /home/ubuntu/workspace/admin/includes/edit_post.php on line 64
+[20-Dec-2017 21:57:32 UTC] PHP Stack trace:
+[20-Dec-2017 21:57:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 21:57:32 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 22:02:53 UTC] PHP Warning:  fopen(cms/138a0f2aeff204d38a52435c46b15a4d.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 48
+[20-Dec-2017 22:02:53 UTC] PHP Stack trace:
+[20-Dec-2017 22:02:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 22:02:53 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 22:02:53 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:48
+[20-Dec-2017 22:02:53 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 22:05:22 UTC] PHP Warning:  fopen(cms/1d8555df32fcd14c24396c7b722cfc4c.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 48
+[20-Dec-2017 22:05:22 UTC] PHP Stack trace:
+[20-Dec-2017 22:05:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 22:05:22 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 22:05:22 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:48
+[20-Dec-2017 22:05:22 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 22:08:21 UTC] PHP Warning:  fopen(cms/e71ad13d26c0ddf9ebc2601d478472ae.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 48
+[20-Dec-2017 22:08:21 UTC] PHP Stack trace:
+[20-Dec-2017 22:08:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 22:08:21 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 22:08:21 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:48
+[20-Dec-2017 22:08:21 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 22:11:53 UTC] PHP Warning:  fopen(cms/5624ffeaaf84f5f42ba943c998e337d1.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 48
+[20-Dec-2017 22:11:53 UTC] PHP Stack trace:
+[20-Dec-2017 22:11:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 22:11:53 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 22:11:53 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:48
+[20-Dec-2017 22:11:53 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 22:12:46 UTC] PHP Warning:  fopen(cms/4dc20c9377984d39265459075eec6c16.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 48
+[20-Dec-2017 22:12:46 UTC] PHP Stack trace:
+[20-Dec-2017 22:12:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 22:12:46 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 22:12:46 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:48
+[20-Dec-2017 22:12:46 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 22:13:03 UTC] PHP Warning:  fopen(cms/9805d0dfa991323b3216546b1f38ea80.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 48
+[20-Dec-2017 22:13:03 UTC] PHP Stack trace:
+[20-Dec-2017 22:13:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 22:13:03 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 22:13:03 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:48
+[20-Dec-2017 22:13:03 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 22:13:42 UTC] PHP Warning:  fopen(cms/aebea50161ca223fe0ba8af0116cae71.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 48
+[20-Dec-2017 22:13:42 UTC] PHP Stack trace:
+[20-Dec-2017 22:13:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 22:13:42 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 22:13:42 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:48
+[20-Dec-2017 22:13:42 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 22:14:12 UTC] PHP Warning:  Illegal string offset 'name' in /home/ubuntu/workspace/admin/includes/edit_post.php on line 63
+[20-Dec-2017 22:14:12 UTC] PHP Stack trace:
+[20-Dec-2017 22:14:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 22:14:12 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 22:14:12 UTC] PHP Warning:  Illegal string offset 'tmp_name' in /home/ubuntu/workspace/admin/includes/edit_post.php on line 64
+[20-Dec-2017 22:14:12 UTC] PHP Stack trace:
+[20-Dec-2017 22:14:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 22:14:12 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 22:14:12 UTC] PHP Warning:  Illegal string offset 'name' in /home/ubuntu/workspace/admin/includes/edit_post.php on line 77
+[20-Dec-2017 22:14:12 UTC] PHP Stack trace:
+[20-Dec-2017 22:14:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 22:14:12 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 22:14:12 UTC] PHP Warning:  Illegal string offset 'tmp_name' in /home/ubuntu/workspace/admin/includes/edit_post.php on line 78
+[20-Dec-2017 22:14:12 UTC] PHP Stack trace:
+[20-Dec-2017 22:14:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 22:14:12 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 22:16:03 UTC] PHP Warning:  fopen(cms/fd25a7abc1556bc3c3a1039f35bced6b.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 48
+[20-Dec-2017 22:16:03 UTC] PHP Stack trace:
+[20-Dec-2017 22:16:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 22:16:03 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 22:16:03 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:48
+[20-Dec-2017 22:16:03 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 22:17:07 UTC] PHP Warning:  fopen(cms/7d4b680693cdb153380549b8e62fcc75.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/edit_post.php on line 51
+[20-Dec-2017 22:17:07 UTC] PHP Stack trace:
+[20-Dec-2017 22:17:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[20-Dec-2017 22:17:07 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:30
+[20-Dec-2017 22:17:07 UTC] PHP   3. fopen() /home/ubuntu/workspace/admin/includes/edit_post.php:51
+[20-Dec-2017 22:17:07 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[20-Dec-2017 22:24:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/includes/subscriber_profile.php on line 10
+[20-Dec-2017 22:24:55 UTC] PHP Stack trace:
+[20-Dec-2017 22:24:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 22:24:55 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/includes/subscriber_profile.php:10
+[20-Dec-2017 22:24:55 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/admin/includes/functions.php on line 9
+[20-Dec-2017 22:24:55 UTC] PHP Stack trace:
+[20-Dec-2017 22:24:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 22:24:55 UTC] PHP   2. confirm() /home/ubuntu/workspace/includes/subscriber_profile.php:11
+[20-Dec-2017 22:24:55 UTC] PHP   3. mysqli_error() /home/ubuntu/workspace/admin/includes/functions.php:9
+[20-Dec-2017 22:27:59 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/includes/subscriber_profile.php on line 10
+[20-Dec-2017 22:27:59 UTC] PHP Stack trace:
+[20-Dec-2017 22:27:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 22:27:59 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/includes/subscriber_profile.php:10
+[20-Dec-2017 22:27:59 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/admin/includes/functions.php on line 9
+[20-Dec-2017 22:27:59 UTC] PHP Stack trace:
+[20-Dec-2017 22:27:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[20-Dec-2017 22:27:59 UTC] PHP   2. confirm() /home/ubuntu/workspace/includes/subscriber_profile.php:11
+[20-Dec-2017 22:27:59 UTC] PHP   3. mysqli_error() /home/ubuntu/workspace/admin/includes/functions.php:9
+[22-Dec-2017 02:06:12 UTC] PHP Warning:  fopen(cms/c390384472b7e595816e53fbcc105ecb.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/profile.php on line 45
+[22-Dec-2017 02:06:12 UTC] PHP Stack trace:
+[22-Dec-2017 02:06:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/profile.php:0
+[22-Dec-2017 02:06:12 UTC] PHP   2. fopen() /home/ubuntu/workspace/admin/profile.php:45
+[22-Dec-2017 02:06:12 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[22-Dec-2017 06:49:56 UTC] PHP Warning:  fopen(cms/4929815f2c9799c35974fb95c8d79b1d.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/functions.php on line 38
+[22-Dec-2017 06:49:56 UTC] PHP Stack trace:
+[22-Dec-2017 06:49:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[22-Dec-2017 06:49:56 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[22-Dec-2017 06:49:56 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[22-Dec-2017 06:49:56 UTC] PHP   4. fopen() /home/ubuntu/workspace/admin/includes/functions.php:38
+[22-Dec-2017 06:49:56 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[22-Dec-2017 06:58:58 UTC] PHP Warning:  fopen(cms/fecb20d8f45ba8638983503247848108.): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/functions.php on line 41
+[22-Dec-2017 06:58:58 UTC] PHP Stack trace:
+[22-Dec-2017 06:58:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[22-Dec-2017 06:58:58 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[22-Dec-2017 06:58:58 UTC] PHP   3. add_post_admin() /home/ubuntu/workspace/admin/includes/add_posts.php:2
+[22-Dec-2017 06:58:58 UTC] PHP   4. fopen() /home/ubuntu/workspace/admin/includes/functions.php:41
+[22-Dec-2017 06:58:58 UTC] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Found 1 error while validating the input provided for the PutObject operation:
+[Body] must be an fopen resource, a GuzzleHttp\Stream\StreamInterface object, or something that can be cast to a string. Found /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/functions.php:252:
+bool(false)' in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php:65
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Middleware.php(80): Aws\Api\Validator->validate('PutObject', Object(Aws\Api\StructureShape), Array)
+#1 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(427): Aws\Middleware::Aws\{closure}(Object(Aws\Command), NULL)
+#2 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(450): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#3 /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/S3/S3Client.php(384): Aws\S3\S3Client::Aws\S3\{closure}(Object(Aws\Command), NULL)
+#4 /home/ubuntu/workspace/vendor in /home/ubuntu/workspace/vendor/aws/aws-sdk-php/src/Api/Validator.php on line 65
+[22-Dec-2017 07:20:36 UTC] PHP Fatal error:  Call to undefined function modal() in /home/ubuntu/workspace/admin/profile.php on line 176
+[22-Dec-2017 07:20:36 UTC] PHP Stack trace:
+[22-Dec-2017 07:20:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/profile.php:0
+[22-Dec-2017 07:20:41 UTC] PHP Fatal error:  Call to undefined function modal() in /home/ubuntu/workspace/admin/profile.php on line 176
+[22-Dec-2017 07:20:41 UTC] PHP Stack trace:
+[22-Dec-2017 07:20:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/profile.php:0
+[22-Dec-2017 07:20:42 UTC] PHP Fatal error:  Call to undefined function modal() in /home/ubuntu/workspace/admin/profile.php on line 176
+[22-Dec-2017 07:20:42 UTC] PHP Stack trace:
+[22-Dec-2017 07:20:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/profile.php:0
+[22-Dec-2017 07:59:32 UTC] PHP Fatal error:  Cannot redeclare delete_categorie() (previously declared in /home/ubuntu/workspace/admin/includes/functions.php:178) in /home/ubuntu/workspace/admin/modals/delete_category_modal.php on line 24
+[22-Dec-2017 07:59:32 UTC] PHP Stack trace:
+[22-Dec-2017 07:59:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/categories.php:0
+[22-Dec-2017 08:11:41 UTC] PHP Warning:  include(modals/post_creation_modal): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/add_posts.php on line 3
+[22-Dec-2017 08:11:41 UTC] PHP Stack trace:
+[22-Dec-2017 08:11:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[22-Dec-2017 08:11:41 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[22-Dec-2017 08:11:41 UTC] PHP Warning:  include(): Failed opening 'modals/post_creation_modal' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/add_posts.php on line 3
+[22-Dec-2017 08:11:41 UTC] PHP Stack trace:
+[22-Dec-2017 08:11:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[22-Dec-2017 08:11:41 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[22-Dec-2017 08:12:01 UTC] PHP Warning:  include(../modals/post_creation_modal): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/add_posts.php on line 3
+[22-Dec-2017 08:12:01 UTC] PHP Stack trace:
+[22-Dec-2017 08:12:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[22-Dec-2017 08:12:01 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[22-Dec-2017 08:12:01 UTC] PHP Warning:  include(): Failed opening '../modals/post_creation_modal' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/add_posts.php on line 3
+[22-Dec-2017 08:12:01 UTC] PHP Stack trace:
+[22-Dec-2017 08:12:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/posts.php:0
+[22-Dec-2017 08:12:01 UTC] PHP   2. include() /home/ubuntu/workspace/admin/posts.php:26
+[22-Dec-2017 23:47:53 UTC] PHP Warning:  include(modals/delete_user_modal): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/view_all_users.php on line 1
+[22-Dec-2017 23:47:53 UTC] PHP Stack trace:
+[22-Dec-2017 23:47:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/users.php:0
+[22-Dec-2017 23:47:53 UTC] PHP   2. include() /home/ubuntu/workspace/admin/users.php:34
+[22-Dec-2017 23:47:53 UTC] PHP Warning:  include(): Failed opening 'modals/delete_user_modal' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/view_all_users.php on line 1
+[22-Dec-2017 23:47:53 UTC] PHP Stack trace:
+[22-Dec-2017 23:47:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/users.php:0
+[22-Dec-2017 23:47:53 UTC] PHP   2. include() /home/ubuntu/workspace/admin/users.php:34
+[22-Dec-2017 23:48:18 UTC] PHP Warning:  include(../modals/delete_user_modal): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/view_all_users.php on line 1
+[22-Dec-2017 23:48:18 UTC] PHP Stack trace:
+[22-Dec-2017 23:48:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/users.php:0
+[22-Dec-2017 23:48:18 UTC] PHP   2. include() /home/ubuntu/workspace/admin/users.php:34
+[22-Dec-2017 23:48:18 UTC] PHP Warning:  include(): Failed opening '../modals/delete_user_modal' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/view_all_users.php on line 1
+[22-Dec-2017 23:48:18 UTC] PHP Stack trace:
+[22-Dec-2017 23:48:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/users.php:0
+[22-Dec-2017 23:48:18 UTC] PHP   2. include() /home/ubuntu/workspace/admin/users.php:34
+[22-Dec-2017 23:48:41 UTC] PHP Warning:  include(../modals/delete_user_modal.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/view_all_users.php on line 1
+[22-Dec-2017 23:48:41 UTC] PHP Stack trace:
+[22-Dec-2017 23:48:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/users.php:0
+[22-Dec-2017 23:48:41 UTC] PHP   2. include() /home/ubuntu/workspace/admin/users.php:34
+[22-Dec-2017 23:48:41 UTC] PHP Warning:  include(): Failed opening '../modals/delete_user_modal.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/view_all_users.php on line 1
+[22-Dec-2017 23:48:41 UTC] PHP Stack trace:
+[22-Dec-2017 23:48:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/users.php:0
+[22-Dec-2017 23:48:41 UTC] PHP   2. include() /home/ubuntu/workspace/admin/users.php:34
+[23-Dec-2017 00:07:19 UTC] PHP Warning:  include(..modals/category_empty_modal.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/admin/includes/functions.php on line 4
+[23-Dec-2017 00:07:19 UTC] PHP Stack trace:
+[23-Dec-2017 00:07:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/categories.php:0
+[23-Dec-2017 00:07:19 UTC] PHP   2. include() /home/ubuntu/workspace/admin/categories.php:1
+[23-Dec-2017 00:07:19 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[23-Dec-2017 00:07:19 UTC] PHP Warning:  include(): Failed opening '..modals/category_empty_modal.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/admin/includes/functions.php on line 4
+[23-Dec-2017 00:07:19 UTC] PHP Stack trace:
+[23-Dec-2017 00:07:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/categories.php:0
+[23-Dec-2017 00:07:19 UTC] PHP   2. include() /home/ubuntu/workspace/admin/categories.php:1
+[23-Dec-2017 00:07:19 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[23-Dec-2017 00:08:24 UTC] PHP Fatal error:  Cannot redeclare confirm() (previously declared in /home/ubuntu/workspace/admin/includes/functions.php:7) in /home/ubuntu/workspace/admin/includes/functions.php on line 7
+[23-Dec-2017 00:08:24 UTC] PHP Stack trace:
+[23-Dec-2017 00:08:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/categories.php:0
+[23-Dec-2017 00:08:24 UTC] PHP   2. include() /home/ubuntu/workspace/admin/categories.php:1
+[23-Dec-2017 00:08:24 UTC] PHP   3. include() /home/ubuntu/workspace/admin/includes/admin_header.php:4
+[23-Dec-2017 00:08:24 UTC] PHP   4. include() /home/ubuntu/workspace/admin/includes/functions.php:5
+[23-Dec-2017 00:08:24 UTC] PHP   5. include() /home/ubuntu/workspace/admin/categories.php:1
+[23-Dec-2017 03:13:08 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ubuntu/workspace/admin/profile.php on line 75
+[23-Dec-2017 03:13:08 UTC] PHP Stack trace:
+[23-Dec-2017 03:13:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/admin/profile.php:0
+[23-Dec-2017 03:13:08 UTC] PHP   2. update() /home/ubuntu/workspace/admin/profile.php:104
+[23-Dec-2017 03:13:08 UTC] PHP   3. mysqli_query() /home/ubuntu/workspace/admin/profile.php:75
+[23-Dec-2017 05:08:04 UTC] PHP Warning:  include(modals/sub_user_updated_modal.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:08:04 UTC] PHP Stack trace:
+[23-Dec-2017 05:08:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:08:04 UTC] PHP Warning:  include(): Failed opening 'modals/sub_user_updated_modal.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:08:04 UTC] PHP Stack trace:
+[23-Dec-2017 05:08:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:08:31 UTC] PHP Warning:  include(../modals/sub_user_updated_modal.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:08:31 UTC] PHP Stack trace:
+[23-Dec-2017 05:08:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:08:31 UTC] PHP Warning:  include(): Failed opening '../modals/sub_user_updated_modal.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:08:31 UTC] PHP Stack trace:
+[23-Dec-2017 05:08:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:08:39 UTC] PHP Warning:  include(/modals/sub_user_updated_modal.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:08:39 UTC] PHP Stack trace:
+[23-Dec-2017 05:08:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:08:39 UTC] PHP Warning:  include(): Failed opening '/modals/sub_user_updated_modal.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:08:39 UTC] PHP Stack trace:
+[23-Dec-2017 05:08:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:09:00 UTC] PHP Warning:  include(modals/sub_user_edit_modal.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:09:00 UTC] PHP Stack trace:
+[23-Dec-2017 05:09:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:09:00 UTC] PHP Warning:  include(): Failed opening 'modals/sub_user_edit_modal.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:09:00 UTC] PHP Stack trace:
+[23-Dec-2017 05:09:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:09:24 UTC] PHP Warning:  include(admin/modals/sub_user_edit_modal.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:09:24 UTC] PHP Stack trace:
+[23-Dec-2017 05:09:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:09:24 UTC] PHP Warning:  include(): Failed opening 'admin/modals/sub_user_edit_modal.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:09:24 UTC] PHP Stack trace:
+[23-Dec-2017 05:09:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:09:33 UTC] PHP Warning:  include(modals/sub_user_edit_modal.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:09:33 UTC] PHP Stack trace:
+[23-Dec-2017 05:09:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:09:33 UTC] PHP Warning:  include(): Failed opening 'modals/sub_user_edit_modal.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:09:33 UTC] PHP Stack trace:
+[23-Dec-2017 05:09:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:09:42 UTC] PHP Warning:  include(../modals/sub_user_edit_modal.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:09:42 UTC] PHP Stack trace:
+[23-Dec-2017 05:09:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:09:42 UTC] PHP Warning:  include(): Failed opening '../modals/sub_user_edit_modal.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:09:42 UTC] PHP Stack trace:
+[23-Dec-2017 05:09:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:10:04 UTC] PHP Warning:  include(../modals/sub_user_edit_modal.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:10:04 UTC] PHP Stack trace:
+[23-Dec-2017 05:10:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:10:04 UTC] PHP Warning:  include(): Failed opening '../modals/sub_user_edit_modal.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:10:04 UTC] PHP Stack trace:
+[23-Dec-2017 05:10:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:10:32 UTC] PHP Warning:  include(modals/sub_user_edit_modal.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:10:32 UTC] PHP Stack trace:
+[23-Dec-2017 05:10:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:10:32 UTC] PHP Warning:  include(): Failed opening 'modals/sub_user_edit_modal.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:10:32 UTC] PHP Stack trace:
+[23-Dec-2017 05:10:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:10:49 UTC] PHP Warning:  include(..admin/modals/sub_user_edit_modal.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:10:49 UTC] PHP Stack trace:
+[23-Dec-2017 05:10:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:10:49 UTC] PHP Warning:  include(): Failed opening '..admin/modals/sub_user_edit_modal.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:10:49 UTC] PHP Stack trace:
+[23-Dec-2017 05:10:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:10:58 UTC] PHP Warning:  include(admin/modals/sub_user_edit_modal.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:10:58 UTC] PHP Stack trace:
+[23-Dec-2017 05:10:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:10:58 UTC] PHP Warning:  include(): Failed opening 'admin/modals/sub_user_edit_modal.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:10:58 UTC] PHP Stack trace:
+[23-Dec-2017 05:10:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:11:40 UTC] PHP Warning:  include(admin/modals/sub_user_edit_modal.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:11:40 UTC] PHP Stack trace:
+[23-Dec-2017 05:11:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:11:40 UTC] PHP Warning:  include(): Failed opening 'admin/modals/sub_user_edit_modal.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:11:40 UTC] PHP Stack trace:
+[23-Dec-2017 05:11:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:19:48 UTC] PHP Warning:  include(modals/admin_profile_modal.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:19:48 UTC] PHP Stack trace:
+[23-Dec-2017 05:19:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:19:48 UTC] PHP Warning:  include(): Failed opening 'modals/admin_profile_modal.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/subscriber_profile.php on line 6
+[23-Dec-2017 05:19:48 UTC] PHP Stack trace:
+[23-Dec-2017 05:19:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:19:48 UTC] PHP Warning:  include(modals/admin_password.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/includes/subscriber_profile.php on line 7
+[23-Dec-2017 05:19:48 UTC] PHP Stack trace:
+[23-Dec-2017 05:19:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0
+[23-Dec-2017 05:19:48 UTC] PHP Warning:  include(): Failed opening 'modals/admin_password.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/includes/subscriber_profile.php on line 7
+[23-Dec-2017 05:19:48 UTC] PHP Stack trace:
+[23-Dec-2017 05:19:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/includes/subscriber_profile.php:0

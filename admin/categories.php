@@ -1,4 +1,7 @@
-<?php include "includes/admin_header.php"; ?>
+<?php include "includes/admin_header.php"; 
+include "modals/category_suc_modal.php";
+include "modals/delete_category_modal.php";
+?>
 
 
     <div id="wrapper" style="margin-top:-20px;">
@@ -18,15 +21,20 @@
                         </h1>
                         <div class="col-xs-6">
                           <?php 
-                            insert_category();
+                            $return = insert_category();
                           ?>
                           <form action="" method="post">
                             <div class="form-group">
                               <label for="cat_title">Add Category</label>
                               <input class="form-control" type="text" name="cat_title"/>
+                              <?php
+                              if($return != 0){
+                                echo "<p class='text-danger'>Please type the name of the category! </p>";
+                              }
+                              ?>
                             </div>
                             <div class="form-group">
-                              <input class="btn btn-primary" type="submit" name="submit" value="Add Categorie"/>
+                              <input class="btn btn-primary category_creation" type="submit" name="submit" value="Add Category"/>
                             </div>
                           </form>
                           
@@ -73,3 +81,25 @@
         <!-- /#page-wrapper -->
 
    <?php include "includes/admin_footer.php"; ?>
+   
+<script>
+    var check = '<?php echo $return; ?>';
+    
+    if(check == 1){
+      $(document).ready(function(){
+          $(".category_creation").on('click', function(){
+            $('#catSuc').modal('show');
+          });
+        });
+    }
+  
+  
+   $(document).ready(function(){
+    $(".delete_category_link_class").on('click', function(){
+      var id = $(this).attr("rel");
+      var delete_url = "categories.php?delete="+ id +"";
+      $(".category_delete_link").attr("href", delete_url);
+      $('#deleteCat').modal('show');
+    });
+  });
+</script>

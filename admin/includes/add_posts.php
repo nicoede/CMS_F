@@ -1,3 +1,4 @@
+<?php include "modals/post_creation_modal.php"; ?>
 <?php
   add_post_admin();
 ?>
@@ -57,6 +58,14 @@
   </div>
   
   <div class="form-group">
-    <input class="btn btn-primary" type="submit" name="create_post" value="Publish Post"/>
+    <input class="btn btn-primary add_post" type="submit" name="create_post" value="Publish Post"/>
   </div>
 </form>
+
+<script>
+  $(document).ready(function(){
+    $(".add_post").on('click', function(){
+      $('#postCreation').modal('show');
+    });
+  });
+</script>

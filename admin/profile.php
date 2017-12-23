@@ -1,5 +1,8 @@
 <?php 
-include "includes/admin_header.php"; 
+include "includes/admin_header.php";
+include "../s3/init.php";
+include "modals/admin_profile_modal.php";
+include "modals/admin_password.php";
 
 if(isset($_SESSION['username'])){
   $username = $_SESSION['username'];
@@ -18,9 +21,50 @@ if(isset($_SESSION['username'])){
     $user_role = $row['user_role'];
     $user_image = $row['user_image'];
   }
+  $user_image_1 = $user_image;
 }
 
-if(isset($_POST['update_profile'])){
+  if(isset($_POST['update_profile'])){
+      $file = $_FILES['image'];
+    
+      $name = $file['name'];
+      if($name !== ''){
+        $file = $_FILES['image'];
+    
+        $name = $file['name'];
+        $tmp_name = $file['tmp_name'];
+        
+        $ext = explode('.', $name);
+        $ext = strtolower(end($ext));
+        
+        $key = md5(uniqid());
+        
+        $temp_file_name = "{$key}.{$ext}";
+        
+        $temp_file_path = "cms/{$temp_file_name}";
+        
+        move_uploaded_file($tmp_name, $temp_file_path);
+        
+        try {
+          // Upload data.
+          $result = $s3->putObject(array(
+             'Bucket'=> $config['s3']['bucket'],
+              'Key'   => "cms/{$name}",
+              'Body'  => fopen($temp_file_path, 'rb'),
+              'ACL'   => 'public-read'
+         ));
+        
+          // Print the URL to the object.
+        } catch (S3Exception $e) {
+            echo $e->getMessage() . "\n";
+        }
+        unlink($temp_file_path);
+        $user_image = $_FILES['image']['name'];
+        $user_image_tmp = $_FILES['image']['tmp_name'];
+      }else{
+        $user_image = $user_image_1;
+      }
+    
     $username = $_POST['username'];
     $user_firstname = $_POST['user_firstname'];
     $user_lastname = $_POST['user_lastname'];
@@ -28,24 +72,30 @@ if(isset($_POST['update_profile'])){
     $user_password = $_POST['user_password'];
     $user_role = $_POST['user_role'];
     
-    $query = "SELECT randSalt FROM users";
-    $select_randsalt_query = mysqli_query($connection, $query);
-    confirm($select_randsalt_query);
-    
-    $row = mysqli_fetch_array($select_randsalt_query);
-    $salt = $row['randSalt'];
-    $hashed_password = crypt($user_password, $salt);
-    
-    $query = "UPDATE users SET username = '{$username}', user_firstname = '{$user_firstname}', user_lastname = '{$user_lastname}', ";
-    $query .= "user_email = '{$user_email}', user_password = '{$hashed_password}', user_role = '{$user_role}' "; 
-    $query .= "WHERE user_id = {$user_id} ";
-    
-    $update_profile = mysqli_query($connection, $query);
-    
-    confirm($update_profile);
-    $_SESSION['username'] = $username;
-    header("Location: profile.php");
+    if(!empty($username) && !empty($user_email) && !empty($user_password)){
+        $query = "SELECT randSalt FROM users";
+        $select_randsalt_query = mysqli_query($connection, $query);
+        confirm($select_randsalt_query);
+        
+        $row = mysqli_fetch_array($select_randsalt_query);
+        $salt = $row['randSalt'];
+        $hashed_password = crypt($user_password, $salt);
+        
+        $query = "UPDATE users SET username = '{$username}', user_firstname = '{$user_firstname}', user_lastname = '{$user_lastname}', ";
+        $query .= "user_email = '{$user_email}', user_password = '{$hashed_password}', user_image = '{$user_image}', user_role = '{$user_role}' "; 
+        $query .= "WHERE user_id = {$user_id} ";
+        
+        $update_sub_user = mysqli_query($connection, $query);
+        
+        confirm($update_sub_user);
+        
+        $_SESSION['username'] = $username;
+        $return = 1;
+    }else{
+        $return = 2;
+    }
   }
+
 ?>
 
 
@@ -63,6 +113,7 @@ if(isset($_POST['update_profile'])){
                 <div class="col-lg-12">
                     <h1 class="page-header">
                        Your Profile
+                       <span style="float: right; margin-top: -20px;"> <?php echo "<img width='64' src='https://s3-ap-southeast-1.amazonaws.com/nicoedeimages/cms/{$user_image}' alt='image'>"; ?>  </span>
                     </h1>
                     
                     <form action="" method="post" enctype="multipart/form-data">
@@ -74,7 +125,7 @@ if(isset($_POST['update_profile'])){
                     
                       <div class="form-group">
                         <select class="form-control" name="user_role" id="">
-                          <option value="Subscriber"><?php echo $user_role; ?></option>
+                          <option value="<?php echo $user_role; ?>"><?php echo $user_role; ?></option>
                           <?php
                             if($user_role == 'Admin'){
                               echo "<option value='Subscriber'>Subscriber</option>";
@@ -103,14 +154,15 @@ if(isset($_POST['update_profile'])){
                       <div class="form-group">
                         <label for="user_password">Password:</label>
                         <input type="password" class="form-control" name="user_password"/>
+                        <?php echo "<p class='text-danger'>Please retype your password!</p>";?>
                       </div>
                       
                       <div class="form-group">
-                        <img width='100' src="../images/<?php echo $user_image; ?>" alt="">
+                          <label for="image">Profile Picture</label>
+                          <input type="file" name="image"/>
                       </div>
-                      
                       <div class="form-group">
-                        <input class="btn btn-primary" type="submit" name="update_profile" value="Update Profile"/>
+                        <input class="btn btn-primary updateProfile" type="submit" name="update_profile" value="Update Profile"/>
                       </div>
                       
                     </form>
@@ -126,3 +178,15 @@ if(isset($_POST['update_profile'])){
     <!-- /#page-wrapper -->
 
 <?php include "includes/admin_footer.php"; ?>
+
+<script>
+    var check = <?php echo $return; ?>;
+    
+    if(check == 1){
+      $('#adminProfile').modal('show');
+    }
+    
+    if(check == 2){
+      $('#adminPass').modal('show');
+    }
+</script>

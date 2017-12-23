@@ -31,6 +31,7 @@ if(!isset($_SESSION['user_role'])){
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 
     
 
@@ -44,7 +45,10 @@ if(!isset($_SESSION['user_role'])){
     <!--Chart-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     
-    <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>t>
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+    
+      <script src="//code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>

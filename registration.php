@@ -2,44 +2,55 @@
 include "includes/db.php"; 
 include "includes/header.php"; 
 include "includes/navigation.php"; 
-include "admin/includes/functions.php";
+include "admin/modals/error.php";
+include "admin/modals/register_user_modal.php";
+include "admin/modals/user_exists.php";
 
+function eita(){
+global $connection;
 if(isset($_POST['submit'])){
     $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $confirm_password = $_POST['confirm_password'];
-    if(strcmp($password, $confirm_password) !== 0){
-        $errPassword = 'Passwords do not match!';
-    }else{
-        if(!empty($username) && !empty($email) && !empty($password)){
-            $username = mysqli_real_escape_string($connection, $username);
-            $email = mysqli_real_escape_string($connection, $email);
-            $password = mysqli_real_escape_string($connection, $password);
-            
-            $query = "SELECT randSalt FROM users";
-            $select_randsalt_query = mysqli_query($connection, $query);
-            confirm($select_randsalt_query);
-            
-            
-            $row = mysqli_fetch_array($select_randsalt_query);
-            $salt = $row['randSalt'];
-            $password = crypt($password, $salt);
-            
-            $query = "INSERT INTO users (username, user_email, user_password, user_role, user_date)";
-            $query .= "VALUES('{$username}', '{$email}', '{$password}', 'Subscriber', now() )";
-            $register_user_query = mysqli_query($connection, $query);
-            confirm($register_user_query);
-            
-            $message = "Your Registration has been Submited! Now you can login! ";
-            header("Refresh: 0.1; url=index.php");
+    if(!empty($username)){
+        $user_query = "SELECT username FROM users WHERE username = '{$username}'";
+        $user_query_result = mysqli_query($connection, $user_query);
+        $count = mysqli_num_rows($user_query_result);
+    }
+    if($count == 0){
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $confirm_password = $_POST['confirm_password'];
+        if(strcmp($password, $confirm_password) !== 0){
+            $errPassword = 'Passwords do not match!';
         }else{
-            $message = "You need to fill all fields correctly! ";
+            if(!empty($username) && !empty($email) && !empty($password)){
+                $username = mysqli_real_escape_string($connection, $username);
+                $email = mysqli_real_escape_string($connection, $email);
+                $password = mysqli_real_escape_string($connection, $password);
+                
+                $query = "SELECT randSalt FROM users";
+                $select_randsalt_query = mysqli_query($connection, $query);
+                confirm($select_randsalt_query);
+                
+                
+                $row = mysqli_fetch_array($select_randsalt_query);
+                $salt = $row['randSalt'];
+                $password = crypt($password, $salt);
+                $user_image = 'profile.png';
+                
+                $query = "INSERT INTO users (username, user_email, user_password, user_role, user_image, user_date)";
+                $query .= "VALUES('{$username}', '{$email}', '{$password}', 'Subscriber', '{$user_image}', now() )";
+                $register_user_query = mysqli_query($connection, $query);
+                confirm($register_user_query);
+                return $message = 1;
+            }else{
+               return $message = 2;
+            }
         }
-        echo "<script type='text/javascript'>alert('$message');</script>";
+    }else{
+       return $message = 3;
     }
 }
-
+}
 ?>
     
  
@@ -70,8 +81,8 @@ if(isset($_POST['submit'])){
                             <input type="password" name="confirm_password" id="key" class="form-control" placeholder="Confirm Password">
                             <?php echo "<p class='text-danger'>$errPassword</p>";?>
                         </div>
-                
-                        <input type="submit" name="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Register">
+                        <?php $return = eita(); ?>
+                        <input type="submit" name="submit" id="btn-login" class="btn btn-custom btn-lg btn-block registerUser" value="Register">
                     </form>
                  
                 </div>
@@ -83,3 +94,31 @@ if(isset($_POST['submit'])){
 <hr>
 
 <?php include "includes/footer.php";?>
+
+<script>
+    var check = <?php echo $return; ?>;
+    
+    if(check == 1){
+      
+        
+          $('#register_user_modal_id').modal('show');
+        
+      
+    }
+    
+    if(check == 2){
+      
+        
+          $('#error').modal('show');
+        
+      
+    }
+    
+    if(check == 3){
+      
+        
+          $('#user_exists').modal('show');
+        
+      
+    }
+</script>
