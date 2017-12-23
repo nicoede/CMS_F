@@ -32,6 +32,7 @@ if(!isset($_SESSION['user_role'])){
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link rel="icon" href="../images/cms.png">
 
     
 

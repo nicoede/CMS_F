@@ -21,6 +21,7 @@
     <!-- Custom Fonts -->
     <link href="../admin/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link rel="icon" href="images/cms.png">
     
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.js"></script>
