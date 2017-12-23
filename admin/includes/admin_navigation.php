@@ -7,7 +7,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php"><img  src="../images/cms.png" width="36">Admin</a>
+                <a class="navbar-brand" href="index.php"><img style="margin-top: -11px;" src="../images/cms.png" width="45"></a>
             </div>
             
             <!-- Top Menu Items -->
