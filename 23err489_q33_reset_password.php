@@ -2,7 +2,7 @@
 include "includes/db.php"; 
 include "includes/header.php"; 
 include "includes/navigation.php"; 
-include "admin/includes/functions.php";
+
 
 	if(isset($_POST["reset-password"])) {
 		$password = $_POST['password'];
@@ -10,7 +10,6 @@ include "admin/includes/functions.php";
 		$name1 = $_GET['name'];
 		$query = "SELECT randSalt FROM users";
 	    $select_randsalt_query = mysqli_query($connection, $query);
-	    confirm($select_randsalt_query);
 	    
 	    $row = mysqli_fetch_array($select_randsalt_query);
 	    $salt = $row['randSalt'];
