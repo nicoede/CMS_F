@@ -3,7 +3,6 @@ include "includes/db.php";
 include "includes/header.php"; 
 include "includes/navigation.php";
 include "admin/modals/mail_modal.php";
-
 include "forgot-password-recovery-mail.php";
 
 if(isset($_POST["forgot-password"])){
@@ -87,7 +86,7 @@ if(isset($_POST["forgot-password"])){
 
 <script>
     $(document).ready(function(){
-        $(".checkEmail").on('click', function(){
+        $(".emailSend").on('click', function(){
           $('#check_email_modal_id').modal('show');
         });
     });
