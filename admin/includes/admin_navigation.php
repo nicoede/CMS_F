@@ -1,3 +1,12 @@
+     <?php
+        $user = $_SESSION['username'];
+        $userimage_query = "SELECT user_image FROM users WHERE username = '{$user}' ";
+        $userimage_result = mysqli_query($connection, $userimage_query);
+        confirm($userimage_result);
+        $row2 = mysqli_fetch_assoc($userimage_result);
+        $userimage = $row2['user_image'];
+     ?>
+     
      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -17,7 +26,7 @@
                 <ul class="nav navbar-nav navbar-right top-nav">
                     <li><a href="../index.php">HOME SITE</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $_SESSION['username']; ?> <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo "<img height='40' style='margin-right: 5px; margin-top: -13px; margin-bottom: -10px;' src='https://s3-ap-southeast-1.amazonaws.com/nicoedeimages/cms/{$userimage}' alt='image'>"; ?><?php echo $_SESSION['username']; ?> </b> <b class="caret" style="color:#999;"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="profile.php"><i class="fa fa-fw fa-user"></i> Profile</a>

@@ -14,7 +14,7 @@ include "admin/includes/functions.php";
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>                        
                 </button>
-                <a class="active navbar-brand" style="margin-top: 10px; font-size: 30px;" href="../index.php">CMS</a>
+                <a class="active navbar-brand" style="font-size: 30px;" href="../index.php">CMS</a>
             </div>
             <?php
                 if($_SESSION['username'] != null){
@@ -33,12 +33,12 @@ include "admin/includes/functions.php";
                             if($_SESSION['user_role'] == 'Admin'){
                         ?>
                             <li>
-                                <a href="admin" style="margin-top: 10px;">Admin</a>
+                                <a href="admin">Admin</a>
                             </li>
                         <?php } ?>
                     <?php if($_SESSION['username'] != ''){ ?>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo "<img width='36' style='margin-right: 5px;' src='https://s3-ap-southeast-1.amazonaws.com/nicoedeimages/cms/{$userimage}' alt='image'>"; ?><?php echo $_SESSION['username']; ?> </b> <b class="caret" style="color:#999;"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo "<img height='40' style='margin-right: 5px; margin-top: -13px; margin-bottom: -10px;' src='https://s3-ap-southeast-1.amazonaws.com/nicoedeimages/cms/{$userimage}' alt='image'>"; ?><?php echo $_SESSION['username']; ?> </b> <b class="caret" style="color:#999;"></b></a>
                         <ul class="dropdown-menu" role="menu">
                             <li>
                                 <?php if($_SESSION['user_role'] == 'Admin'){?>
@@ -63,14 +63,14 @@ include "admin/includes/functions.php";
                         while($row = mysqli_fetch_assoc($select_all_categories_query)){
                           $cat_id = $row['cat_id'];
                           $cat_title = $row['cat_title'];
-                          echo "<li><a style='margin-top: 10px;' href='category.php?category=$cat_id'>{$cat_title}</a></li>";
+                          echo "<li><a href='category.php?category=$cat_id'>{$cat_title}</a></li>";
                         }
                       ?>
                     
                    
                     <?php if(!isset($_SESSION['username'])){ ?>
                         <li>
-                            <a style="margin-top: 10px;" href="registration.php">Registration</a>
+                            <a href="registration.php">Registration</a>
                         </li>
                     <?php } ?>
 
