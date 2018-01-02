@@ -2,7 +2,7 @@
 include "includes/db.php"; 
 include "includes/header.php"; 
 include "includes/navigation.php"; 
-include "admin/includes/functions.php";
+
 include "forgot-password-recovery-mail.php";
 
 if(isset($_POST["forgot-password"])){
