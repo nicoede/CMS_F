@@ -74,13 +74,7 @@ session_start();
   }
   
   function show_all_posts_admin(){
-    include "../s3/init.php";
     global $connection;
-    
-    $objs = $s3->getIterator('ListObjects', [
-        'Prefix' => 'cms/',
-        'Bucket' => $config['s3']['bucket']
-    ]);
     
     $query = "SELECT * FROM posts ";
     $select_posts = mysqli_query($connection, $query);
