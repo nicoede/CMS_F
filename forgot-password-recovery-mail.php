@@ -9,8 +9,7 @@ require 'vendor/autoload.php';
 function sendmail($username1, $user_email1){
 	$mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 	
-	$emailBody = "<div>" . $username1 . ",<br><br><p>Click this link to recover your password<br><a href='" . "https://cmsss-nicoede.c9users.io" . "/reset_password.php?name=" . $username1 . "'>" . "</a><br><br></p>Regards,<br> Admin.</div>";
-	$emailBody = "<div>" . $username1 . ",<br><br><p>Click this link to recover your password https://cmsss-nicoede.c9users.io/reset_password.php?name=" . $username1 . "<br><br></p>Regards,<br> Admin.</div>";
+	$emailBody = "<div>" . $username1 . ",<br><br><p>Click <a href=https://cmsnico.herokuapp.com/23err489_q33_reset_password.php?name=" . $username1 . ">here</a> to recover your password. <br><br></p>Regards,<br> Admin.</div>";
 	
 	//Server settings
 	$mail->SMTPDebug = false;                                 // Enable verbose debug output
@@ -28,7 +27,7 @@ function sendmail($username1, $user_email1){
 	
 	//Content
 	                                 // Set email format to HTML
-	$mail->Subject = "Forgot Password Recovery";
+	$mail->Subject = "CMS System - Forgot Password Recovery";
 	
 	$mail->MsgHTML($emailBody);
 	$mail->isHTML(true); 
